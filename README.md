@@ -1,1 +1,1 @@
-# Dissertation
+# Symulacja komputerowa zaniku sygnału luminescencyjnego w skaleniach
