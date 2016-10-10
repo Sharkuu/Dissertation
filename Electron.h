@@ -4,10 +4,11 @@
 
 #ifndef DISSERTATION_ELECTRON_H
 #define DISSERTATION_ELECTRON_H
+
 #include <iostream>
 #include <vector>
 
-class Electron{
+class Electron {
 private:
     double x_pos;
     double y_pos;
@@ -15,10 +16,16 @@ private:
 
 public:
     Electron(double x, double y, double z);
+
+    ~Electron();
+
     std::vector<double> getPosition();
-    inline void setX(double x){x_pos = x;}
-    inline void setY(double y){y_pos = y;}
-    inline void setZ(double z){z_pos = z;}
+
+    inline void setX(double x) { x_pos = x; }
+
+    inline void setY(double y) { y_pos = y; }
+
+    inline void setZ(double z) { z_pos = z; }
 
 
 };

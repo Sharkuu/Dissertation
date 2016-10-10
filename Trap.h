@@ -6,15 +6,20 @@
 #define DISSERTATION_TRAP_H
 
 #include "Electron.h"
-class Trap{
+
+class Trap {
 private:
     double x_pos;
     double y_pos;
     double z_pos;
-    Electron * electron = NULL;
+    Electron *electron = NULL;
 public:
     Trap(double x, double y, double z);
-    void setElectron(Electron * electron1);
+
+    ~Trap();
+
+    void setElectron(Electron *electron1);
+
     bool isOccupied();
 
 };
