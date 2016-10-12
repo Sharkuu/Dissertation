@@ -22,6 +22,9 @@ public:
 
     bool isOccupied();
 
+    friend std::ostream &operator<<(std::ostream &s, const Trap &v);
+
+
 };
 
 

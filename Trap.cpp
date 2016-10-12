@@ -26,3 +26,8 @@ void Trap::setElectron(Electron *electron1) {
     this->electron = electron1;
 }
 
+std::ostream & operator <<( std::ostream & s, const Trap & v )
+{
+    return s << '<' << v.x_pos << ',' << v.y_pos << ',' << v.z_pos << '>';
+}
+

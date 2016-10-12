@@ -4,16 +4,19 @@
 #include <iostream>
 #include "Electron.h"
 #include "Trap.h"
+#include "Functions.h"
 
 int main() {
-    Electron e1(0.05, 6, 7);
-    std::vector<std::vector<double> > pos;
-    pos.push_back(e1.getPosition());
-    std::cout << pos[0][0] << " " << pos[0][1] << " " << pos[0][2] << std::endl;
-    Trap t1(5, 6, 7);
-    t1.setElectron(&e1);
-    std::cout << t1.isOccupied() << std::endl;
-    pos.push_back(e1.getPosition());
-    std::cout << pos[1][0] << " " << pos[1][1] << " " << pos[1][2] << std::endl;
+    std::vector<Electron> electrons;
+    std::vector<Trap> traps;
+    createElectrons(electrons);
+    printVector(electrons);
+    createTraps(traps);
+    printVector(traps);
+    electrons.clear();
+    traps.clear();
+    traps[0].setElectron(&electrons[2]);
+    std::cout << traps[0].isOccupied();
+
     return 0;
 }

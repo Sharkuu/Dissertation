@@ -27,6 +27,8 @@ public:
 
     inline void setZ(double z) { z_pos = z; }
 
+    friend std::ostream &operator<<(std::ostream &s, const Electron &v);
+
 
 };
 
