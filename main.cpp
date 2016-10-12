@@ -15,7 +15,7 @@ int main() {
     printVector(traps);
     electrons.clear();
     traps.clear();
-    traps[0].setElectron(&electrons[2]);
+    traps[0].setElectron(electrons[2]);
     std::cout << traps[0].isOccupied();
 
     return 0;

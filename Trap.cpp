@@ -19,11 +19,11 @@ bool Trap::isOccupied() {
 
 }
 
-void Trap::setElectron(Electron *electron1) {
-    electron1->setX(this->x_pos);
-    electron1->setY(this->y_pos);
-    electron1->setZ(this->z_pos);
-    this->electron = electron1;
+void Trap::setElectron(Electron electron1) {
+    electron1.setX(this->x_pos);
+    electron1.setY(this->y_pos);
+    electron1.setZ(this->z_pos);
+    this->electron = &electron1;
 }
 
 std::ostream & operator <<( std::ostream & s, const Trap & v )

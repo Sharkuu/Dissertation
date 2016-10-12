@@ -18,7 +18,7 @@ public:
 
     ~Trap();
 
-    void setElectron(Electron *electron1);
+    void setElectron(Electron electron1);
 
     bool isOccupied();
 
