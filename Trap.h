@@ -9,9 +9,7 @@
 
 class Trap {
 private:
-    double x_pos;
-    double y_pos;
-    double z_pos;
+    std::vector<double> position;
     Electron *electron = NULL;
 public:
     Trap(double x, double y, double z);

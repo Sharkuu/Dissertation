@@ -5,9 +5,9 @@
 #include "Trap.h"
 
 Trap::Trap(double x, double y, double z) {
-    this->x_pos = x;
-    this->y_pos = y;
-    this->z_pos = z;
+    this->position.push_back(x);
+    this->position.push_back(y);
+    this->position.push_back(z);
 }
 
 Trap::~Trap() { }
@@ -20,14 +20,14 @@ bool Trap::isOccupied() {
 }
 
 void Trap::setElectron(Electron electron1) {
-    electron1.setX(this->x_pos);
-    electron1.setY(this->y_pos);
-    electron1.setZ(this->z_pos);
+    electron1.setX(this->position[0]);
+    electron1.setY(this->position[1]);
+    electron1.setZ(this->position[2]);
     this->electron = &electron1;
 }
 
 std::ostream & operator <<( std::ostream & s, const Trap & v )
 {
-    return s << '<' << v.x_pos << ',' << v.y_pos << ',' << v.z_pos << '>';
+    return s << '<' << v.position[0] << ',' << v.position[1] << ',' << v.position[2] << '>';
 }
 

@@ -20,7 +20,6 @@ void createElectrons(std::vector<Electron> &electrons) {
         electrons.push_back(e);
     }
 
-
 }
 
 void createTraps(std::vector<Trap> &traps) {

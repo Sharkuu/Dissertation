@@ -10,22 +10,20 @@
 
 class Electron {
 private:
-    double x_pos;
-    double y_pos;
-    double z_pos;
+    std::vector<double> position;
+
 
 public:
     Electron(double x, double y, double z);
 
     ~Electron();
 
-    std::vector<double> getPosition();
 
-    inline void setX(double x) { x_pos = x; }
+    inline void setX(double x) { position[0] = x; }
 
-    inline void setY(double y) { y_pos = y; }
+    inline void setY(double y) { position[1] = y; }
 
-    inline void setZ(double z) { z_pos = z; }
+    inline void setZ(double z) { position[2] = z; }
 
     friend std::ostream &operator<<(std::ostream &s, const Electron &v);
 
