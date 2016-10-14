@@ -14,14 +14,14 @@
 class Crystal {
 private:
     std::vector<Trap> traps;
-    std::vector<Electron> electrons;
+    std::vector<Electron*> electrons;
 
 public:
     Crystal(unsigned long n);
 
     std::vector<Trap> getTraps();
 
-    std::vector<Electron> getElectrons();
+    std::vector<Electron*> getElectrons();
 };
 
 

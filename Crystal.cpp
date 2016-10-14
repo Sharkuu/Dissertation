@@ -19,7 +19,7 @@ Crystal::Crystal(unsigned long n) {
         Trap trap = Trap(pos);
         Electron * e = new Electron(pos);
         trap.setElectron(e);
-        electrons.push_back(*e);
+        electrons.push_back(e);
         this->traps.push_back(trap);
         pos.clear();
 
@@ -30,6 +30,6 @@ std::vector<Trap> Crystal::getTraps() {
     return this->traps;
 }
 
-std::vector<Electron> Crystal::getElectrons() {
+std::vector<Electron*> Crystal::getElectrons() {
     return this->electrons;
 }

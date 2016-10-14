@@ -9,7 +9,6 @@
 int main() {
     Crystal crystal = Crystal(2);
     printVector(crystal.getTraps());
-    printVector(crystal.getElectrons());
     std::vector<Trap> traps = crystal.getTraps();
     std::cout<<*traps[0].getElectron()<<std::endl;
     std::cout<<*traps[1].getElectron()<<std::endl;
