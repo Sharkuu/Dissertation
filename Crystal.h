@@ -16,7 +16,6 @@ private:
     std::vector<Trap> traps;
     std::vector<Electron> electrons;
 
-
 public:
     Crystal(unsigned long n);
 

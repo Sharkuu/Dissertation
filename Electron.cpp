@@ -12,11 +12,6 @@ Electron::Electron(std::vector<double> pos) {
 
 Electron::~Electron() {}
 
-Electron::Electron() {
-    this->position.push_back(0);
-    this->position.push_back(0);
-    this->position.push_back(0);
-}
 
 
 std::ostream &operator<<(std::ostream &s, const Electron &v) {

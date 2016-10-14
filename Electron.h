@@ -16,8 +16,6 @@ private:
 public:
     Electron(std::vector<double> pos);
 
-    Electron();
-
     ~Electron();
 
 
