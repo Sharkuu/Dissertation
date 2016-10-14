@@ -3,7 +3,7 @@
 //
 
 #include "Functions.h"
-
+/*
 void createElectrons(std::vector<Electron> &electrons) {
     double min_range, max_range;
     int n;
@@ -41,3 +41,4 @@ void createTraps(std::vector<Trap> &traps) {
 
 }
 
+*/

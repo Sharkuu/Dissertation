@@ -12,11 +12,13 @@ private:
     std::vector<double> position;
     Electron *electron = NULL;
 public:
-    Trap(double x, double y, double z);
+    Trap(std::vector<double> position);
 
     ~Trap();
 
-    void setElectron(Electron electron1);
+    void setElectron(Electron &electron1);
+
+    void removeElectron();
 
     bool isOccupied();
 

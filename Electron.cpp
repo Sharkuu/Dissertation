@@ -4,16 +4,21 @@
 
 #include "Electron.h"
 
-Electron::Electron(double x, double y, double z) {
-    this->position.push_back(x);
-    this->position.push_back(y);
-    this->position.push_back(z);
+Electron::Electron(std::vector<double> pos) {
+    this->position.push_back(pos[0]);
+    this->position.push_back(pos[1]);
+    this->position.push_back(pos[2]);
 }
 
 Electron::~Electron() {}
 
+Electron::Electron() {
+    this->position.push_back(0);
+    this->position.push_back(0);
+    this->position.push_back(0);
+}
 
 
 std::ostream &operator<<(std::ostream &s, const Electron &v) {
-    return s << '<' << v.position[0] << ',' << v.position[1] << ',' << v.position[2] << '>';
+    return s << '<' << v.position[0] << ',' << v.position[1] << ',' << v.position[2] << '>' << std::endl;
 }

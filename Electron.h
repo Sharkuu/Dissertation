@@ -14,7 +14,9 @@ private:
 
 
 public:
-    Electron(double x, double y, double z);
+    Electron(std::vector<double> pos);
+
+    Electron();
 
     ~Electron();
 

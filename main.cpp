@@ -4,19 +4,19 @@
 #include <iostream>
 #include "Electron.h"
 #include "Trap.h"
+#include "Crystal.h"
 #include "Functions.h"
-
 int main() {
-    std::vector<Electron> electrons;
-    std::vector<Trap> traps;
-    createElectrons(electrons);
-    printVector(electrons);
-    createTraps(traps);
-    printVector(traps);
-    electrons.clear();
-    traps.clear();
-    traps[0].setElectron(electrons[2]);
-    std::cout << traps[0].isOccupied();
+    Crystal crystal = Crystal(3);
+    printVector(crystal.getTraps());
+    printVector(crystal.getElectrons());
+    std::vector<Trap> traps = crystal.getTraps();
+    std::cout<<traps[0].isOccupied()<<std::endl;
+    traps[0].removeElectron();
+    std::cout<<traps[0].isOccupied()<<std::endl;
+    crystal.getTraps().clear();
+    crystal.getElectrons().clear();
+
 
     return 0;
 }
