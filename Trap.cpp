@@ -21,7 +21,6 @@ Trap::~Trap() {}
 
 bool Trap::isOccupied() {
     if (this->electron != NULL){
-        std::cout<<this<<std::endl;
         return true;}
     return false;
 
