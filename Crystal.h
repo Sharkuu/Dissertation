@@ -22,6 +22,8 @@ public:
     std::vector<Trap> getTraps();
 
     std::vector<Electron*> getElectrons();
+
+    void removeAll();
 };
 
 

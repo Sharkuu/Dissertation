@@ -33,3 +33,10 @@ std::vector<Trap> Crystal::getTraps() {
 std::vector<Electron*> Crystal::getElectrons() {
     return this->electrons;
 }
+
+void Crystal::removeAll() {
+    for (auto i = this->electrons.begin(); i != this->electrons.end(); ++i)
+        delete *i;
+
+
+}

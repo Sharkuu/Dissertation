@@ -12,9 +12,9 @@ int main() {
     std::vector<Trap> traps = crystal.getTraps();
     std::cout<<*traps[0].getElectron()<<std::endl;
     std::cout<<*traps[1].getElectron()<<std::endl;
-    crystal.getTraps().clear();
-    crystal.getElectrons().clear();
-
-
+    crystal.removeAll();
+    std::cout<<"-------------------------------------------------\n";
+    std::cout<<*traps[0].getElectron()<<std::endl;
+    std::cout<<*traps[1].getElectron()<<std::endl;
     return 0;
 }
