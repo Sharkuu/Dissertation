@@ -20,8 +20,9 @@ Trap::Trap(std::vector<double> pos) {
 Trap::~Trap() {}
 
 bool Trap::isOccupied() {
-    if (this->electron != NULL)
-        return true;
+    if (this->electron != NULL){
+        std::cout<<this<<std::endl;
+        return true;}
     return false;
 
 }
@@ -30,8 +31,8 @@ void Trap::removeElectron() {
     this->electron = NULL;
 }
 
-void Trap::setElectron(Electron &electron1) {
-    this->electron = &electron1;
+void Trap::setElectron(Electron *electron1) {
+    this->electron = electron1;
 }
 
 std::ostream &operator<<(std::ostream &s, const Trap &v) {

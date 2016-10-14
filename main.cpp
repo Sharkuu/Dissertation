@@ -7,13 +7,12 @@
 #include "Crystal.h"
 #include "Functions.h"
 int main() {
-    Crystal crystal = Crystal(3);
+    Crystal crystal = Crystal(2);
     printVector(crystal.getTraps());
     printVector(crystal.getElectrons());
     std::vector<Trap> traps = crystal.getTraps();
-    std::cout<<traps[0].isOccupied()<<std::endl;
-    traps[0].removeElectron();
-    std::cout<<traps[0].isOccupied()<<std::endl;
+    std::cout<<*traps[0].getElectron()<<std::endl;
+    std::cout<<*traps[1].getElectron()<<std::endl;
     crystal.getTraps().clear();
     crystal.getElectrons().clear();
 

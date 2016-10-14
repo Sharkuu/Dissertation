@@ -10,13 +10,15 @@
 class Trap {
 private:
     std::vector<double> position;
-    Electron *electron = NULL;
+    Electron *electron ;
 public:
     Trap(std::vector<double> position);
 
     ~Trap();
 
-    void setElectron(Electron &electron1);
+    void setElectron(Electron *electron1);
+
+    Electron *getElectron(){ return this->electron;}
 
     void removeElectron();
 

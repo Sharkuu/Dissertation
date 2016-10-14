@@ -17,10 +17,10 @@ Crystal::Crystal(unsigned long n) {
         pos.push_back((max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range);
         pos.push_back((max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range);
         Trap trap = Trap(pos);
-        Electron e = Electron(pos);
+        Electron * e = new Electron(pos);
         trap.setElectron(e);
+        electrons.push_back(*e);
         this->traps.push_back(trap);
-        this->electrons.push_back(e);
         pos.clear();
 
 
