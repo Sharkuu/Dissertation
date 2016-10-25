@@ -18,13 +18,15 @@ Trap::Trap(std::vector<double> pos) {
 
 Trap::~Trap() {}
 
-bool Trap::isOccupied() const{
-    if (this->electron){
-        return true;}
+bool Trap::isOccupied() const {
+    if (this->electron) {
+        return true;
+    }
     return false;
 
 }
-Electron* Trap::getElectron() const{
+
+Electron *Trap::getElectron() const {
     if (this->electron)
         return this->electron;
     return NULL;
