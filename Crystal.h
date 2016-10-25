@@ -5,7 +5,7 @@
 #ifndef DISSERTATION_CRYSTAL_H
 #define DISSERTATION_CRYSTAL_H
 
-#define S 3*powl(10,15)
+#define S 3e15
 #define cr_alpha powl(1,-0.997)
 
 #include <ostream>
@@ -42,6 +42,7 @@ public:
 
     std::vector<Electron *> getElectrons() const;
 
+    double tunnelEffectProbability(double time, double tau) const;
     void removeAll();
 };
 

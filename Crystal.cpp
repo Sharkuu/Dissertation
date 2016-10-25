@@ -76,10 +76,15 @@ double Crystal::calculateDistance(const Trap &trap) const {
 double Crystal::calculateTau(double distance) const {
     return pow(S, -1) * exp(cr_alpha * distance);
 }
+double Crystal::tunnelEffectProbability(double time, double tau) const {
+    return exp(-time / tau);
+
+}
 void Crystal::tunnelEffect(Trap &trap, int time) {
     std::cout <<  this->calculateDistance(trap)<< std::endl;
     std::cout <<  this->calculateTau(this->calculateDistance(trap))<< std::endl;
-    std::cout <<  exp(-time /this->calculateTau(this->calculateDistance(trap)))<< std::endl;
+    double tau = this->calculateTau(this->calculateDistance(trap));
+    std::cout <<  this->tunnelEffectProbability(time,tau)<< std::endl;
     if (exp(-time / this->calculateTau(this->calculateDistance(trap))) == 4) {
         trap.removeElectron();
     }
