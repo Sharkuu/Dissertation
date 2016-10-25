@@ -33,9 +33,9 @@ Electron *Trap::getElectron() const {
 }
 
 void Trap::removeElectron() {
-    this->electron->setX(0);
-    this->electron->setY(0);
-    this->electron->setZ(0);
+    this->electron->setX(0.0);
+    this->electron->setY(0.0);
+    this->electron->setZ(0.0);
     this->electron = NULL;
 
 }

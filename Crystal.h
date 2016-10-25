@@ -5,8 +5,8 @@
 #ifndef DISSERTATION_CRYSTAL_H
 #define DISSERTATION_CRYSTAL_H
 
-#define S 0.005
-#define cr_alpha 0.006
+#define S 3*powl(10,15)
+#define cr_alpha powl(1,-0.997)
 
 #include <ostream>
 #include <vector>
@@ -23,9 +23,9 @@ private:
     std::vector<Electron *> electrons;
     std::vector<ElectronHole *> electron_holes;
 
-    unsigned long calculateTau(double distance) const;
+    double calculateTau(double distance) const;
 
-    double calculateDistance(Trap trap) const;
+    double calculateDistance(const Trap &trap) const;
 
 public:
     Crystal(unsigned long n);

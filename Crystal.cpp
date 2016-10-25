@@ -65,20 +65,22 @@ unsigned long Crystal::electronsBeginnig() const {
     return this->amount_electrons_begin;
 }
 
-unsigned long Crystal::calculateTau(double distance) const {
-    return pow(S, -1) * exp(cr_alpha * distance);
-}
 
-double Crystal::calculateDistance(Trap trap) const {
+
+double Crystal::calculateDistance(const Trap &trap) const {
     return std::sqrt((trap.getX() - 0) * (trap.getX() - 0) +
                      (trap.getY() - 0) * (trap.getY() - 0) +
                      (trap.getZ() - 0) * (trap.getZ() - 0));
 }
 
-
+double Crystal::calculateTau(double distance) const {
+    return pow(S, -1) * exp(cr_alpha * distance);
+}
 void Crystal::tunnelEffect(Trap &trap, int time) {
-    std::cout << exp(-time / this->calculateTau(this->calculateDistance(trap))) << std::endl;
-    if (exp(-time / this->calculateTau(this->calculateDistance(trap))) < 4) {
+    std::cout <<  this->calculateDistance(trap)<< std::endl;
+    std::cout <<  this->calculateTau(this->calculateDistance(trap))<< std::endl;
+    std::cout <<  exp(-time /this->calculateTau(this->calculateDistance(trap)))<< std::endl;
+    if (exp(-time / this->calculateTau(this->calculateDistance(trap))) == 4) {
         trap.removeElectron();
     }
 }

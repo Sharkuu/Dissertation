@@ -8,9 +8,11 @@
 #include "Functions.h"
 
 int main() {
-    Crystal crystal = Crystal(5, 0.0000001, 0.002);
+    Crystal crystal = Crystal(2, 0.00000000000000000000000001, 0.000000000000002);
     printVector(crystal.getTraps());
     crystal.startSimulation(5);
+    //std::vector<Electron*> electrons = crystal.getElectrons();
+    //std::cout<<*electrons[0]<<std::endl;
     crystal.removeAll();
     /* std::vector<Trap> traps = crystal.getTraps();
      std::cout<<*traps[0].getElectron()<<std::endl;
