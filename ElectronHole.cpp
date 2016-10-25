@@ -5,10 +5,10 @@
 #include "ElectronHole.h"
 
 
-ElectronHole::ElectronHole(double x, double y, double z) {
-    this->position.push_back(x);
-    this->position.push_back(y);
-    this->position.push_back(z);
+ElectronHole::ElectronHole(std::vector<double> pos) {
+    this->position.push_back(pos[0]);
+    this->position.push_back(pos[1]);
+    this->position.push_back(pos[2]);
 }
 
 ElectronHole::~ElectronHole() {}

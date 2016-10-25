@@ -15,14 +15,16 @@ public:
     Trap(std::vector<double> position);
 
     ~Trap();
-
+    inline double getX() const{ return position[0];}
+    inline double getY() const{ return position[1];}
+    inline double getZ() const{ return position[2];}
     void setElectron(Electron *electron1);
 
-    inline Electron* getElectron(){ return this->electron;}
+    Electron* getElectron() const;
 
     void removeElectron();
 
-    bool isOccupied();
+    bool isOccupied() const;
 
     friend std::ostream &operator<<(std::ostream &s, const Trap &v);
 

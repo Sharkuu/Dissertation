@@ -7,6 +7,7 @@
 
 Crystal::Crystal(unsigned long n) {
     double min_range, max_range;
+    this->amount_electrons_begin = n;
     std::vector<double> pos;
     std::cout << " Enter min position of traps: \n";
     std::cin >> min_range;
@@ -19,18 +20,35 @@ Crystal::Crystal(unsigned long n) {
         Trap trap = Trap(pos);
         Electron * e = new Electron(pos);
         trap.setElectron(e);
-        electrons.push_back(e);
+        this->electrons.push_back(e);
         this->traps.push_back(trap);
         pos.clear();
 
 
 }}
 
-std::vector<Trap> Crystal::getTraps() {
+Crystal::Crystal(unsigned long n, double min_range, double max_range) {
+    this->amount_electrons_begin = n;
+    std::vector<double> pos;
+    for (unsigned long i = 0; i < n; i++) {
+        pos.push_back((max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range);
+        pos.push_back((max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range);
+        pos.push_back((max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range);
+        Trap trap = Trap(pos);
+        Electron * e = new Electron(pos);
+        trap.setElectron(e);
+        this->electrons.push_back(e);
+        this->traps.push_back(trap);
+        pos.clear();
+
+
+    }}
+
+std::vector<Trap> Crystal::getTraps() const{
     return this->traps;
 }
 
-std::vector<Electron*> Crystal::getElectrons() {
+std::vector<Electron*> Crystal::getElectrons() const{
     return this->electrons;
 }
 
@@ -40,3 +58,48 @@ void Crystal::removeAll() {
 
 
 }
+
+unsigned long Crystal::electronsBeginnig() const{
+    return this->amount_electrons_begin;
+}
+
+unsigned long Crystal::calculateTau(double distance) const{
+return pow(S,-1)*exp(cr_alpha*distance);
+}
+double Crystal::calculateDistance(Trap trap) const{
+        return std::sqrt((trap.getX()-0)*(trap.getX()-0) +
+                         (trap.getY()-0)*(trap.getY()-0) +
+                                 (trap.getZ() - 0)*(trap.getZ() - 0));
+}
+
+
+
+
+void Crystal::tunnelEffect(Trap &trap, int time) {
+    std::cout<<exp(-time/this->calculateTau(this->calculateDistance(trap)))<<std::endl;
+    if (exp(-time/this->calculateTau(this->calculateDistance(trap)))<4){
+        trap.removeElectron();
+    }
+}
+
+void Crystal::startSimulation(int time) {
+    for (int t = 0; t < time; ++t) {
+        for (auto i = this->traps.begin(); i != traps.end(); ++i){
+            if (i->isOccupied()) {
+                this->tunnelEffect(*i, t);
+            }
+        }
+    }
+    std::cout<<this->amount_electrons_begin<<std::endl;
+    unsigned long amount_electrons_end = 0;
+    for (auto i = this->traps.begin(); i != traps.end(); ++i) {
+        if (i->isOccupied())
+            amount_electrons_end++;
+    }
+    std::cout<<amount_electrons_end<<std::endl;
+}
+
+
+
+
+

@@ -1,7 +1,6 @@
 //
 // Created by olav on 10.10.2016.
 //
-
 /*
  *
  * @TODO
@@ -19,15 +18,24 @@ Trap::Trap(std::vector<double> pos) {
 
 Trap::~Trap() {}
 
-bool Trap::isOccupied() {
-    if (this->electron != NULL){
+bool Trap::isOccupied() const{
+    if (this->electron){
         return true;}
     return false;
 
 }
+Electron* Trap::getElectron() const{
+    if (this->electron)
+        return this->electron;
+    return NULL;
+}
 
 void Trap::removeElectron() {
+    this->electron->setX(0);
+    this->electron->setY(0);
+    this->electron->setZ(0);
     this->electron = NULL;
+
 }
 
 void Trap::setElectron(Electron *electron1) {

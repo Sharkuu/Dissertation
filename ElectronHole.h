@@ -12,7 +12,7 @@ class ElectronHole {
 private:
     std::vector<double> position;
 public:
-    ElectronHole(double x, double y, double z);
+    ElectronHole(std::vector<double> pos);
 
     ~ElectronHole();
 
