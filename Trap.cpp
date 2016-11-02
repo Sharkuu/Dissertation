@@ -32,16 +32,28 @@ Electron *Trap::getElectron() const {
     return NULL;
 }
 
-void Trap::removeElectron() {
-    this->electron->setX(0.0);
-    this->electron->setY(0.0);
-    this->electron->setZ(0.0);
+void Trap::removeElectron(std::vector<double> position) {
+    this->electron->setX(position[0]);
+    this->electron->setY(position[1]);
+    this->electron->setZ(position[2]);
     this->electron = NULL;
 
 }
 
 void Trap::setElectron(Electron *electron1) {
     this->electron = electron1;
+}
+
+bool Trap::operator==(const Trap &trap) {
+    if (this->position == trap.position)
+        return true;
+    return false;
+}
+
+bool Trap::operator!=(const Trap &trap) {
+    if (this->position == trap.position)
+        return false;
+    return true;
 }
 
 std::ostream &operator<<(std::ostream &s, const Trap &v) {

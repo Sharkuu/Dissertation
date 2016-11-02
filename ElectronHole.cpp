@@ -5,10 +5,19 @@
 #include "ElectronHole.h"
 
 
-ElectronHole::ElectronHole(std::vector<double> pos) {
+ElectronHole::ElectronHole(std::vector<double> pos, Trap *trap) {
+    this->trap = trap;
     this->position.push_back(pos[0]);
     this->position.push_back(pos[1]);
     this->position.push_back(pos[2]);
 }
 
+void ElectronHole::nullTrap() {
+    this->trap = NULL;
+}
+
 ElectronHole::~ElectronHole() {}
+
+std::ostream &operator<<(std::ostream &s, const ElectronHole &v) {
+    return s << '<' << v.position[0] << ',' << v.position[1] << ',' << v.position[2] << '>' << std::endl;
+}

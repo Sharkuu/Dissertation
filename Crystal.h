@@ -5,8 +5,7 @@
 #ifndef DISSERTATION_CRYSTAL_H
 #define DISSERTATION_CRYSTAL_H
 
-#define S 3e15
-#define cr_alpha powl(1,-0.997)
+
 
 #include <ostream>
 #include <vector>
@@ -18,19 +17,20 @@
 
 class Crystal {
 private:
+    double S = 3e15;
     unsigned long amount_electrons_begin;
     std::vector<Trap> traps;
     std::vector<Electron *> electrons;
     std::vector<ElectronHole *> electron_holes;
 
-    double calculateTau(double distance) const;
+    double calculateTau(double distance, ElectronHole * el_hole,const  Trap & trap) const;
 
-    double calculateDistance(const Trap &trap) const;
+    double calculateDistance(const Trap &trap, const ElectronHole * hole) const;
 
 public:
     Crystal(unsigned long n);
 
-    Crystal(unsigned long n, double min, double max);
+    Crystal(long long int n_el, long long n_holes, double min, double max);
 
     void startSimulation(int time);
 
@@ -42,7 +42,9 @@ public:
 
     std::vector<Electron *> getElectrons() const;
 
-    double tunnelEffectProbability(double time, double tau) const;
+    std::vector<ElectronHole *> getElectronHoles() const;
+
+    static double tunnelEffectProbability(double time, double tau) ;
     void removeAll();
 };
 

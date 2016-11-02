@@ -8,12 +8,26 @@
 #include "Functions.h"
 
 int main() {
-    Crystal crystal = Crystal(2, 0.00000000000000000000000001, 0.000000000000002);
-    printVector(crystal.getTraps());
-    crystal.startSimulation(5);
-    //std::vector<Electron*> electrons = crystal.getElectrons();
-    //std::cout<<*electrons[0]<<std::endl;
-    crystal.removeAll();
+    Crystal crystal = Crystal(3, 2, 0.00000000000000000000000001, 0.000000000000002);
+    /*std::cout<<"Traps"<<std::endl;
+
+
+    std::vector<Trap> traps = crystal.getTraps();
+    int n = traps.size();
+    for (auto i = 0; i <n; ++i){
+        std::cout<< traps[i].isOccupied()<<std::endl;
+    }*/
+    crystal.startSimulation(2);
+    /*std::cout<<"ELECTRONS"<<std::endl;
+    std::vector<Electron*> electrons = crystal.getElectrons();
+    std::cout<<*electrons[0]<<std::endl;
+    std::cout<<*electrons[1]<<std::endl;
+    std::cout<<*electrons[2]<<std::endl;
+    std::cout<<"Holes"<<std::endl;
+    std::vector<ElectronHole*> electronHoles = crystal.getElectronHoles();
+    std::cout<<*electronHoles[0]<<std::endl;
+    std::cout<<*electronHoles[1]<<std::endl;
+   // crystal.removeAll();
     /* std::vector<Trap> traps = crystal.getTraps();
      std::cout<<*traps[0].getElectron()<<std::endl;
      //std::cout<<*traps[1].getElectron()<<std::endl;

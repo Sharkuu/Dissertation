@@ -13,7 +13,6 @@ Electron::Electron(std::vector<double> pos) {
 Electron::~Electron() {}
 
 
-
 std::ostream &operator<<(std::ostream &s, const Electron &v) {
     return s << '<' << v.position[0] << ',' << v.position[1] << ',' << v.position[2] << '>' << std::endl;
 }

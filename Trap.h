@@ -10,7 +10,8 @@
 class Trap {
 private:
     std::vector<double> position;
-    Electron *electron;
+    Electron *electron = NULL;
+    double energy = 1; //eV
 public:
     Trap(std::vector<double> position);
 
@@ -22,13 +23,19 @@ public:
 
     inline double getZ() const { return position[2]; }
 
+    inline double getEnergy() const { return energy; }
+
     void setElectron(Electron *electron1);
 
     Electron *getElectron() const;
 
-    void removeElectron();
+    void removeElectron(std::vector<double> position);
 
     bool isOccupied() const;
+
+    bool operator==(const Trap &trap);
+
+    bool operator!=(const Trap &trap);
 
     friend std::ostream &operator<<(std::ostream &s, const Trap &v);
 
