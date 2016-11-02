@@ -44,17 +44,6 @@ void Trap::setElectron(Electron *electron1) {
     this->electron = electron1;
 }
 
-bool Trap::operator==(const Trap &trap) {
-    if (this->position == trap.position)
-        return true;
-    return false;
-}
-
-bool Trap::operator!=(const Trap &trap) {
-    if (this->position == trap.position)
-        return false;
-    return true;
-}
 
 std::ostream &operator<<(std::ostream &s, const Trap &v) {
     return s << '<' << v.position[0] << ',' << v.position[1] << ',' << v.position[2] << "> " << std::endl;

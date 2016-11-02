@@ -33,9 +33,6 @@ public:
 
     bool isOccupied() const;
 
-    bool operator==(const Trap &trap);
-
-    bool operator!=(const Trap &trap);
 
     friend std::ostream &operator<<(std::ostream &s, const Trap &v);
 
