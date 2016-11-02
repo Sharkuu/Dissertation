@@ -67,6 +67,8 @@ std::vector<ElectronHole *> Crystal::getElectronHoles() const {
 void Crystal::removeAll() {
     for (auto i = this->electrons.begin(); i != this->electrons.end(); ++i)
         delete *i;
+    for (auto i = this->electron_holes.begin(); i != this->electron_holes.end(); ++i)
+        delete *i;
 
 
 }
@@ -93,19 +95,19 @@ double Crystal::tunnelEffectProbability(double time, double tau) {
 
 void Crystal::tunnelEffect(Trap &trap, int time) {
     double probability = 1;
-    int k,n = 0;
+    int k, n = 0;
     ElectronHole *hole = NULL;
     for (auto i = this->electron_holes.begin(); i != electron_holes.end(); ++i) {
         hole = *i;
         if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, hole), hole, trap)) <
-            probability && hole->getTrap()!=NULL) {
-            k=n;
+            probability && hole->getTrap() != NULL) {
+            k = n;
             probability = this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, *i), *i,
                                                                                  trap));
         }
         n++;
     }
-     //  electron_holes.erase(electron_holes.begin()+k);
+    //  electron_holes.erase(electron_holes.begin()+k);
     if (probability < 1) {
         Electron *e = trap.getElectron();
         trap.removeElectron(std::vector<double>{hole->getX(), hole->getY(), hole->getZ()});
