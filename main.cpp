@@ -8,7 +8,7 @@
 #include "Functions.h"
 
 int main() {
-    Crystal crystal = Crystal(3, 2, 0.00000000000000000000000001, 0.000000000000002);
+    Crystal crystal = Crystal(3, 5, 0.00000000000000000000000001, 0.000000000000002);
     /*std::cout<<"Traps"<<std::endl;
 
 
