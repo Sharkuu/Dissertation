@@ -17,7 +17,7 @@
 
 class Crystal {
 private:
-    double S = 3e15;
+    double S = 3.9e-1;
     unsigned long amount_electrons_begin;
     std::vector<Trap> traps;
     std::vector<Electron *> electrons;

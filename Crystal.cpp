@@ -108,8 +108,8 @@ void Crystal::tunnelEffect(Trap &trap, int time) {
         }
         n++;
     }
-    if (probability < 1) {
-        //std::cout<<"k= "<<k<<std::endl;
+    if (probability < 0.2) {
+        std::cout<<"k= "<<k<<std::endl;
         Electron *e = trap.getElectron();
         trap.removeElectron(std::vector<double>{hole->getX(), hole->getY(), hole->getZ()});
         Trap *new_trap = hole->getTrap();
@@ -120,7 +120,7 @@ void Crystal::tunnelEffect(Trap &trap, int time) {
 }
 
 void Crystal::startSimulation(int time) {
-    for (int t = 0; t < time; ++t) {
+    for (int t = 1; t < time; ++t) {
         for (auto i = this->traps.begin(); i != traps.end(); ++i) {
             if (i->isOccupied()) {
                 //std::cout<<"nowy";
