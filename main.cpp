@@ -18,6 +18,7 @@ int main() {
         std::cout<< traps[i].isOccupied()<<std::endl;
     }*/
     crystal.startSimulation(50);
+    crystal.removeAll();
     /*std::cout<<"ELECTRONS"<<std::endl;
     std::vector<Electron*> electrons = crystal.getElectrons();
     std::cout<<*electrons[0]<<std::endl;

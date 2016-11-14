@@ -64,10 +64,10 @@ std::vector<ElectronHole *> Crystal::getElectronHoles() const {
 }
 
 void Crystal::removeAll() {
-    for (auto i = this->electrons.begin(); i != this->electrons.end(); ++i)
-        delete *i;
-    for (auto i = this->electron_holes.begin(); i != this->electron_holes.end(); ++i)
-        delete *i;
+    for (auto elec : electrons)
+        delete elec;
+    for (auto holes: electron_holes)
+        delete holes;
 
 
 }
@@ -96,14 +96,13 @@ void Crystal::tunnelEffect(Trap &trap, int time) {
     double probability = 1;
     int k, n = 0;
     ElectronHole *hole = NULL,*curr_hole = NULL;
-    for (auto i = this->electron_holes.begin(); i != electron_holes.end(); ++i) {
-        curr_hole = *i;
-        std::cout<<this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, curr_hole), curr_hole, trap))<<std::endl;
-        if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, curr_hole), curr_hole, trap)) <
-            probability && curr_hole->getTrap() != NULL) {
+    for (auto i : this->electron_holes) {
+        std::cout<<this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap))<<std::endl;
+        if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap)) <
+            probability && i->getTrap() != NULL) {
             k = n;
-            hole = curr_hole;
-            probability = this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, *i), *i,
+            hole = i;
+            probability = this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i,
                                                                                  trap));
         }
         n++;
@@ -123,7 +122,7 @@ void Crystal::startSimulation(int time) {
     for (int t = 1; t < time; ++t) {
         for (auto i = this->traps.begin(); i != traps.end(); ++i) {
             if (i->isOccupied()) {
-                //std::cout<<"nowy";
+                //std::cout<<"nowy"<<std::endl;
                 this->tunnelEffect(*i, t);
             }
         }

@@ -17,8 +17,8 @@ void createTraps(std::vector<Trap> &traps);
 
 template<typename T>
 void printVector(T vector) {
-    for (auto i = vector.begin(); i != vector.end(); ++i)
-        std::cout << *i << ' ';
+    for (auto i : vector)
+        std::cout << i << ' ';
     std::cout << std::endl;
 
 }
