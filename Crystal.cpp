@@ -86,7 +86,7 @@ double Crystal::calculateDistance(const Trap &trap, const ElectronHole *hole) co
 }
 
 double Crystal::calculateTau(double distance, ElectronHole *el_hole, const Trap &trap) const {
-    return pow(this->S, -1) * exp((trap.getEnergy() - el_hole->getEnergy()) * distance);
+    return (1/S) * exp((trap.getEnergy() - el_hole->getEnergy()) * distance);
 }
 
 double Crystal::tunnelEffectProbability(double time, double tau) {
@@ -97,7 +97,7 @@ double Crystal::tunnelEffectProbability(double time, double tau) {
 void Crystal::tunnelEffect(Trap &trap, int time) {
     double probability = 1;
     int k, n = 0;
-    ElectronHole *hole = NULL, *curr_hole = NULL;
+    ElectronHole *hole = NULL;
     for (auto i : this->electron_holes) {
         std::cout << this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap))
                   << std::endl;

@@ -2,12 +2,17 @@
 // Created by olav on 10.10.2016.
 //
 #include <iostream>
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
+#include "tests/test.h"
 #include "Electron.h"
 #include "Trap.h"
 #include "Crystal.h"
 #include "Functions.h"
 
-int main() {
+int main(int argc, char* argv[]) {
+    testing::InitGoogleTest(&argc,argv);
+    test();
     Crystal crystal = Crystal(3, 5, 0.00000000000000000000000001, 0.000000000000002);
     /*std::cout<<"Traps"<<std::endl;
 
@@ -19,6 +24,7 @@ int main() {
     }*/
     crystal.startSimulation(50);
     crystal.removeAll();
+
     /*std::cout<<"ELECTRONS"<<std::endl;
     std::vector<Electron*> electrons = crystal.getElectrons();
     std::cout<<*electrons[0]<<std::endl;
