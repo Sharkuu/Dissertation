@@ -38,7 +38,8 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
         trap.setElectron(e);
         this->electrons.push_back(e);
         this->traps.push_back(trap);
-        pos.clear();}
+        pos.clear();
+    }
     for (unsigned long i = 0; i < n_holes; i++) {
         std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
@@ -47,8 +48,9 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
         this->traps.push_back(*trap);
         ElectronHole *hole = new ElectronHole(pos, trap);
         this->electron_holes.push_back(hole);
-        pos.clear();}
+        pos.clear();
     }
+}
 
 
 std::vector<Trap> Crystal::getTraps() const {
@@ -95,9 +97,10 @@ double Crystal::tunnelEffectProbability(double time, double tau) {
 void Crystal::tunnelEffect(Trap &trap, int time) {
     double probability = 1;
     int k, n = 0;
-    ElectronHole *hole = NULL,*curr_hole = NULL;
+    ElectronHole *hole = NULL, *curr_hole = NULL;
     for (auto i : this->electron_holes) {
-        std::cout<<this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap))<<std::endl;
+        std::cout << this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap))
+                  << std::endl;
         if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap)) <
             probability && i->getTrap() != NULL) {
             k = n;
@@ -108,13 +111,12 @@ void Crystal::tunnelEffect(Trap &trap, int time) {
         n++;
     }
     if (probability < 0.2) {
-        std::cout<<"k= "<<k<<std::endl;
+        std::cout << "k= " << k << std::endl;
         Electron *e = trap.getElectron();
         trap.removeElectron(std::vector<double>{hole->getX(), hole->getY(), hole->getZ()});
-        Trap *new_trap = hole->getTrap();
-        new_trap->setElectron(e);
+        hole->getTrap()->setElectron(e);
         hole->nullTrap();
-        electron_holes.erase(electron_holes.begin()+k);
+        electron_holes.erase(electron_holes.begin() + k);
     }
 }
 
