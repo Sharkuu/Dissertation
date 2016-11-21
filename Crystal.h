@@ -9,6 +9,7 @@
 
 #include <ostream>
 #include <vector>
+#include <map>
 #include <cstdlib>
 #include <cmath>
 #include "Trap.h"
@@ -17,8 +18,8 @@
 
 class Crystal {
 private:
-    double S = 3.9e-1;
-    unsigned long amount_electrons_begin;
+    double S = 10e10;
+    std::map<unsigned long,unsigned long> amount_electrons;
     std::vector<Trap> traps;
     std::vector<Electron *> electrons;
     std::vector<ElectronHole *> electron_holes;
@@ -46,6 +47,7 @@ public:
 
     static double tunnelEffectProbability(double time, double tau) ;
     void removeAll();
+    unsigned long countElectrons() const;
 };
 
 

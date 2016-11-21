@@ -7,7 +7,7 @@
 
 Crystal::Crystal(unsigned long n) {
     double min_range, max_range;
-    this->amount_electrons_begin = n;
+    this->amount_electrons[0] = 0;
     std::cout << " Enter min position of traps: \n";
     std::cin >> min_range;
     std::cout << " Enter max position of traps: \n";
@@ -28,7 +28,7 @@ Crystal::Crystal(unsigned long n) {
 }
 
 Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, double max_range) {
-    this->amount_electrons_begin = n_el;
+    this->amount_electrons[0] = 0;
     for (unsigned long i = 0; i < n_el; i++) {
         std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
@@ -86,7 +86,7 @@ double Crystal::calculateDistance(const Trap &trap, const ElectronHole *hole) co
 }
 
 double Crystal::calculateTau(double distance, ElectronHole *el_hole, const Trap &trap) const {
-    return (1/S) * exp((trap.getEnergy() - el_hole->getEnergy()) * distance);
+    return (1 / S) * exp((trap.getEnergy() - el_hole->getEnergy()) * distance);
 }
 
 double Crystal::tunnelEffectProbability(double time, double tau) {
@@ -95,28 +95,20 @@ double Crystal::tunnelEffectProbability(double time, double tau) {
 }
 
 void Crystal::tunnelEffect(Trap &trap, int time) {
-    double probability = 1;
-    int k, n = 0;
-    ElectronHole *hole = NULL;
+    int n = 0;
     for (auto i : this->electron_holes) {
         std::cout << this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap))
                   << std::endl;
         if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap)) <
-            probability && i->getTrap() != NULL) {
-            k = n;
-            hole = i;
-            probability = this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i,
-                                                                                 trap));
+            ((double) std::rand() / (double) (RAND_MAX)) && i->getTrap() != NULL) {
+            Electron *e = trap.getElectron();
+            trap.removeElectron(std::vector<double>{i->getX(), i->getY(), i->getZ()});
+            //i->getTrap()->setElectron(e);
+            i->nullTrap();
+            electron_holes.erase(electron_holes.begin() + n);
+            break;
         }
         n++;
-    }
-    if (probability < 0.2) {
-        std::cout << "k= " << k << std::endl;
-        Electron *e = trap.getElectron();
-        trap.removeElectron(std::vector<double>{hole->getX(), hole->getY(), hole->getZ()});
-        hole->getTrap()->setElectron(e);
-        hole->nullTrap();
-        electron_holes.erase(electron_holes.begin() + k);
     }
 }
 
@@ -126,19 +118,22 @@ void Crystal::startSimulation(int time) {
             if (i->isOccupied()) {
                 //std::cout<<"nowy"<<std::endl;
                 this->tunnelEffect(*i, t);
+                /*if (...){
+                    this->amount_electrons[t] = this->countElectrons();
+                }*/
             }
         }
     }
-    /*std::cout << this->amount_electrons_begin << std::endl;
-    unsigned long amount_electrons_end = 0;
-    for (auto i = this->traps.begin(); i != traps.end(); ++i) {
-        if (i->isOccupied())
-            amount_electrons_end++;
-    }
-    std::cout << amount_electrons_end << std::endl;*/
 }
 
-
+unsigned long Crystal::countElectrons() const {
+    unsigned long electrons = 0;
+    for(auto i = this->traps.begin(); i != traps.end(); ++i){
+        if (i->isOccupied())
+            ++electrons;
+    }
+    return electrons;
+}
 
 
 

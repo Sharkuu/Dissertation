@@ -5,15 +5,17 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include "tests/test.h"
+
 #include "Electron.h"
 #include "Trap.h"
 #include "Crystal.h"
 #include "Functions.h"
 
 int main(int argc, char* argv[]) {
-    testing::InitGoogleTest(&argc,argv);
-    test();
-    Crystal crystal = Crystal(3, 5, 0.00000000000000000000000001, 0.000000000000002);
+    //testing::InitGoogleTest(&argc,argv);
+   // test();
+    Crystal crystal = Crystal(3, 5, -2, 2);
+    //printVector(crystal.getTraps());
     /*std::cout<<"Traps"<<std::endl;
 
 
