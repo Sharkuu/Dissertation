@@ -1,10 +1,10 @@
 //
 // Created by olav on 10.10.2016.
 //
+
+
+
 #include <iostream>
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
-#include "tests/test.h"
 
 #include "Electron.h"
 #include "Trap.h"
@@ -25,6 +25,8 @@ int main(int argc, char* argv[]) {
         std::cout<< traps[i].isOccupied()<<std::endl;
     }*/
     crystal.startSimulation(50);
+    //std::cout<<crystal.countElectrons()<<std::endl;
+    crystal.saveToFile();
     crystal.removeAll();
 
     /*std::cout<<"ELECTRONS"<<std::endl;

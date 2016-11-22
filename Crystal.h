@@ -11,6 +11,8 @@
 #include <vector>
 #include <map>
 #include <cstdlib>
+#include <iostream>
+#include <fstream>
 #include <cmath>
 #include "Trap.h"
 #include "Electron.h"
@@ -33,11 +35,11 @@ public:
 
     Crystal(long long int n_el, long long n_holes, double min, double max);
 
+    unsigned long changeTime(unsigned long time) const;
     void startSimulation(int time);
 
     void tunnelEffect(Trap &trap, int time);
 
-    unsigned long electronsBeginnig() const;
 
     std::vector<Trap> getTraps() const;
 
@@ -48,6 +50,7 @@ public:
     static double tunnelEffectProbability(double time, double tau) ;
     void removeAll();
     unsigned long countElectrons() const;
+    void saveToFile() ;
 };
 
 

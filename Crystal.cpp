@@ -28,7 +28,7 @@ Crystal::Crystal(unsigned long n) {
 }
 
 Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, double max_range) {
-    this->amount_electrons[0] = 0;
+    this->amount_electrons[0] = n_el;
     for (unsigned long i = 0; i < n_el; i++) {
         std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
@@ -74,10 +74,6 @@ void Crystal::removeAll() {
 
 }
 
-unsigned long Crystal::electronsBeginnig() const {
-    return this->amount_electrons_begin;
-}
-
 
 double Crystal::calculateDistance(const Trap &trap, const ElectronHole *hole) const {
     return std::sqrt((trap.getX() - hole->getX()) * (trap.getX() - hole->getX()) +
@@ -118,9 +114,9 @@ void Crystal::startSimulation(int time) {
             if (i->isOccupied()) {
                 //std::cout<<"nowy"<<std::endl;
                 this->tunnelEffect(*i, t);
-                /*if (...){
+                if (((double) std::rand() / (double) (RAND_MAX)) != 0.9) {
                     this->amount_electrons[t] = this->countElectrons();
-                }*/
+                }
             }
         }
     }
@@ -128,12 +124,26 @@ void Crystal::startSimulation(int time) {
 
 unsigned long Crystal::countElectrons() const {
     unsigned long electrons = 0;
-    for(auto i = this->traps.begin(); i != traps.end(); ++i){
+    for (auto i = this->traps.begin(); i != traps.end(); ++i) {
         if (i->isOccupied())
             ++electrons;
     }
     return electrons;
 }
 
+void Crystal::saveToFile() {
+    std::ofstream file;
+    file.open("./example.txt");
+    for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
+        file << this->changeTime(it->first) << ";" << it->second / this->amount_electrons[0] << "\n";
+    }
+    file.close();
 
+    return;
+}
+
+unsigned long Crystal::changeTime(unsigned long time) const {
+    return log10(time / 1728e12);
+
+}
 
