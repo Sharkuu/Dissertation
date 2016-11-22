@@ -114,7 +114,7 @@ void Crystal::startSimulation(int time) {
             if (i->isOccupied()) {
                 //std::cout<<"nowy"<<std::endl;
                 this->tunnelEffect(*i, t);
-                if (((double) std::rand() / (double) (RAND_MAX)) != 0.9) {
+                if (((double) std::rand() / (double) (RAND_MAX)) < 0.4) {
                     this->amount_electrons[t] = this->countElectrons();
                 }
             }
