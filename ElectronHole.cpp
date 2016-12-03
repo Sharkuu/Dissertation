@@ -6,7 +6,6 @@
 
 
 ElectronHole::ElectronHole(std::vector<double> pos, Trap trap) {
-    //TWORZY WYCIEKI PAMIECI!!!
     this->trap = &trap;
     this->position.push_back(pos[0]);
     this->position.push_back(pos[1]);

@@ -102,6 +102,7 @@ void Crystal::tunnelEffect(Trap &trap, int time) {
             //i->getTrap()->setElectron(e);
             i->nullTrap();
             electron_holes.erase(electron_holes.begin() + n);
+            delete i;
             break;
         }
         n++;
