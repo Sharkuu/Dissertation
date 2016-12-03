@@ -5,8 +5,9 @@
 #include "ElectronHole.h"
 
 
-ElectronHole::ElectronHole(std::vector<double> pos, Trap *trap) {
-    this->trap = trap;
+ElectronHole::ElectronHole(std::vector<double> pos, Trap trap) {
+    //TWORZY WYCIEKI PAMIECI!!!
+    this->trap = &trap;
     this->position.push_back(pos[0]);
     this->position.push_back(pos[1]);
     this->position.push_back(pos[2]);

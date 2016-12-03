@@ -44,8 +44,8 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
         std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range};
-        Trap *trap = new Trap(pos);
-        this->traps.push_back(*trap);
+        Trap trap(pos);
+        this->traps.push_back(trap);
         ElectronHole *hole = new ElectronHole(pos, trap);
         this->electron_holes.push_back(hole);
         pos.clear();
@@ -65,7 +65,7 @@ std::vector<ElectronHole *> Crystal::getElectronHoles() const {
     return this->electron_holes;
 }
 
-void Crystal::removeAll() {
+Crystal::~Crystal() {
     for (auto elec : electrons)
         delete elec;
     for (auto holes: electron_holes)

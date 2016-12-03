@@ -16,7 +16,7 @@ private:
 
     double energy = 0.6; //eV
 public:
-    ElectronHole(std::vector<double> pos, Trap *trap);
+    ElectronHole(std::vector<double> pos, Trap trap);
 
     inline double getEnergy() const { return energy; }
 

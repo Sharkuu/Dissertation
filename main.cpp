@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
     crystal.startSimulation(50);
     //std::cout<<crystal.countElectrons()<<std::endl;
     crystal.saveToFile();
-    crystal.removeAll();
+    //crystal.removeAll();
 
     /*std::cout<<"ELECTRONS"<<std::endl;
     std::vector<Electron*> electrons = crystal.getElectrons();
