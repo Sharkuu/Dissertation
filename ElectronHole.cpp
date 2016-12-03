@@ -17,7 +17,7 @@ void ElectronHole::nullTrap() {
 }
 
 ElectronHole::~ElectronHole() {
-    delete this->trap;
+    //delete this->trap;
 }
 
 std::ostream &operator<<(std::ostream &s, const ElectronHole &v) {
