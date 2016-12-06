@@ -134,16 +134,16 @@ void Crystal::saveToFile() {
     std::ofstream file;
     file.open("./example.txt");
     for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
-        //file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
-        file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+        file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+        //file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
     }
     file.close();
 
     return;
 }
 
-unsigned long Crystal::changeTime(unsigned long time) const {
-    return log10(time / 1728e12);
+double Crystal::changeTime(unsigned long time) const {
+    return log10(time / 1728e2);
 
 }
 

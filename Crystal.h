@@ -35,7 +35,7 @@ public:
     ~Crystal();
     Crystal(long long int n_el, long long n_holes, double min, double max);
 
-    unsigned long changeTime(unsigned long time) const;
+    double changeTime(unsigned long time) const;
     void startSimulation(int time);
 
     void tunnelEffect(Trap &trap, int time);

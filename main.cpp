@@ -14,7 +14,7 @@
 int main(int argc, char* argv[]) {
     //testing::InitGoogleTest(&argc,argv);
    // test();
-    Crystal crystal = Crystal(1000, 1000, -343, 343);
+    Crystal crystal = Crystal(1000, 1000, -800, 800);
     //printVector(crystal.getTraps());
     /*std::cout<<"Traps"<<std::endl;
 
