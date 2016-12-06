@@ -135,7 +135,7 @@ void Crystal::saveToFile() {
     file.open("./example.txt");
     for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
         file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
-        //file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+        ///file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
     }
     file.close();
 
