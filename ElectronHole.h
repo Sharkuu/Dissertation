@@ -14,7 +14,7 @@ private:
     std::vector<double> position;
     Trap *trap = NULL;
 
-    double energy = 0.6; //eV
+    double energy = 1.; //eV
 public:
     ElectronHole(std::vector<double> pos, Trap trap);
 

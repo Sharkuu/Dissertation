@@ -93,11 +93,11 @@ double Crystal::tunnelEffectProbability(double time, double tau) {
 void Crystal::tunnelEffect(Trap &trap, int time) {
     int n = 0;
     for (auto i : this->electron_holes) {
-        std::cout << this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap))
-                  << std::endl;
+        //std::cout << this->tunnelEffectProbability(time*86400, this->calculateTau(this->calculateDistance(trap, i), i, trap))
+        //          << std::endl;
         if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap)) <
             ((double) std::rand() / (double) (RAND_MAX)) && i->getTrap() != NULL) {
-            Electron *e = trap.getElectron();
+            //Electron *e = trap.getElectron();
             trap.removeElectron(std::vector<double>{i->getX(), i->getY(), i->getZ()});
             //i->getTrap()->setElectron(e);
             i->nullTrap();
@@ -113,13 +113,11 @@ void Crystal::startSimulation(int time) {
     for (int t = 1; t < time; ++t) {
         for (auto i = this->traps.begin(); i != traps.end(); ++i) {
             if (i->isOccupied()) {
-                //std::cout<<"nowy"<<std::endl;
-                this->tunnelEffect(*i, t);
-                if (((double) std::rand() / (double) (RAND_MAX)) < 0.4) {
-                    this->amount_electrons[t] = this->countElectrons();
-                }
+                this->tunnelEffect(*i, t*86400);
+
             }
         }
+        this->amount_electrons[t*86400] = this->countElectrons();
     }
 }
 
@@ -136,7 +134,8 @@ void Crystal::saveToFile() {
     std::ofstream file;
     file.open("./example.txt");
     for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
-        file << this->changeTime(it->first) << ";" << it->second / this->amount_electrons[0] << "\n";
+        //file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+        file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
     }
     file.close();
 

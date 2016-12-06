@@ -20,7 +20,7 @@
 
 class Crystal {
 private:
-    double S = 10e10;
+    double S = 3e15;
     std::map<unsigned long,unsigned long> amount_electrons;
     std::vector<Trap> traps;
     std::vector<Electron *> electrons;

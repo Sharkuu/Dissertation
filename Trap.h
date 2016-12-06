@@ -11,7 +11,7 @@ class Trap {
 private:
     std::vector<double> position;
     Electron *electron = NULL;
-    double energy = 0.3; //eV
+    double energy = 2.; //eV
 public:
     Trap(std::vector<double> position);
 
