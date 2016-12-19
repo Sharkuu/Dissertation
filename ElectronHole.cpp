@@ -5,7 +5,7 @@
 #include "ElectronHole.h"
 
 
-ElectronHole::ElectronHole(std::vector<double> pos, Trap trap) {
+ElectronHole::ElectronHole(std::vector<double> pos, Trap &trap) {
     this->trap = &trap;
     this->position.push_back(pos[0]);
     this->position.push_back(pos[1]);

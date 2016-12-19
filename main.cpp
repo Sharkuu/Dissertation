@@ -14,17 +14,8 @@
 int main(int argc, char* argv[]) {
     //testing::InitGoogleTest(&argc,argv);
    // test();
-    Crystal crystal = Crystal(1000, 1000, -800, 800);
-    //printVector(crystal.getTraps());
-    /*std::cout<<"Traps"<<std::endl;
-
-
-    std::vector<Trap> traps = crystal.getTraps();
-    int n = traps.size();
-    for (auto i = 0; i <n; ++i){
-        std::cout<< traps[i].isOccupied()<<std::endl;
-    }*/
-    crystal.startSimulation(1000);
+    Crystal crystal = Crystal(1e6, 1e6, -900, 900);
+    crystal.startSimulation(9125);
     //std::cout<<crystal.countElectrons()<<std::endl;
     std::cout<<std::endl;
     std::cout<<crystal.countElectrons();

@@ -20,7 +20,7 @@ Crystal::Crystal(unsigned long n) {
         Electron *e = new Electron(pos);
         trap.setElectron(e);
         this->electrons.push_back(e);
-        this->traps.push_back(trap);
+        this->el_traps.push_back(trap);
         pos.clear();
 
 
@@ -37,7 +37,7 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
         Electron *e = new Electron(pos);
         trap.setElectron(e);
         this->electrons.push_back(e);
-        this->traps.push_back(trap);
+        this->el_traps.push_back(trap);
         pos.clear();
     }
     for (unsigned long i = 0; i < n_holes; i++) {
@@ -45,7 +45,7 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
                                 (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range};
         Trap trap(pos);
-        this->traps.push_back(trap);
+        //this->traps.push_back(trap);
         ElectronHole *hole = new ElectronHole(pos, trap);
         this->electron_holes.push_back(hole);
         pos.clear();
@@ -54,7 +54,7 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
 
 
 std::vector<Trap> Crystal::getTraps() const {
-    return this->traps;
+    return this->el_traps;
 }
 
 std::vector<Electron *> Crystal::getElectrons() const {
@@ -111,9 +111,9 @@ void Crystal::tunnelEffect(Trap &trap, int time) {
 
 void Crystal::startSimulation(int time) {
     for (int t = 1; t < time; ++t) {
-        for (auto i = this->traps.begin(); i != traps.end(); ++i) {
+        for (auto i = this->el_traps.begin(); i != el_traps.end(); ++i) {
             if (i->isOccupied()) {
-                this->tunnelEffect(*i, t*86400);
+                this->tunnelEffect(*i, 86400);
 
             }
         }
@@ -123,7 +123,7 @@ void Crystal::startSimulation(int time) {
 
 unsigned long Crystal::countElectrons() const {
     unsigned long electrons = 0;
-    for (auto i = this->traps.begin(); i != traps.end(); ++i) {
+    for (auto i = this->el_traps.begin(); i != el_traps.end(); ++i) {
         if (i->isOccupied())
             ++electrons;
     }
@@ -132,10 +132,15 @@ unsigned long Crystal::countElectrons() const {
 
 void Crystal::saveToFile() {
     std::ofstream file;
-    file.open("./example.txt");
+    file.open("./example2.txt");
     for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
-        file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
-        //file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+        file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+    }
+    file.close();
+
+    file.open("./example1.txt");
+    for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
+        file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
     }
     file.close();
 
