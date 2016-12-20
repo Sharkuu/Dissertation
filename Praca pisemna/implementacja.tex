@@ -1,0 +1,35 @@
+\chapter{Implementacja}
+
+Głównym założeniem projektu było stworzenie go w taki sposób, aby kod jak najtrafniej odzwierciedlał rzeczywistość. W tym celu stworzono klasy obiektów reprezentujące rzeczywiste byty w świecie realnym.
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{strukturaprojektu}
+\caption{Struktura projektu.}
+\label{fig:Struktura projektu}
+\end{figure}
+\section{Klasy}
+Każda z klas posiada własne metody w zależności od swojego przeznaczenia.
+
+Klasa \textit{Electron} odzwierciedla cząstkę elementarną - elektron. Zmiana ilości tych cząstek w stanie wzbudzonym tj. znajdujących się w pułapce jest głównym celem wykonania tej symulacji.
+
+\textit{ElectronHole} jest reprezentacją dziury elektronowej, z którą to elektron po wykorzystaniu zjawiska tunelowego zrekombinuje.
+
+Klasa \textit{Trap} odpowiada defektom w sieci krystalicznej czyli pułapkom, które mogą przechwycić elektron lub dziurę elektronową.
+Na potrzeby wykonania tej symulacji założono, że na samym jej początku wszystkie obiekty reprezentujące elektrony oraz dziury elektronowe znajdują się już w pułapkach. Dodatkowo, w symulacji ustalono, że dany elektron jeśli spełni warunek wystąpienia zjawiska tunelowego - po jego zajściu i rekombinacji z dziurą - nie może przetunelować ponownie. Zostało to podyktowane zmniejszeniem oczekiwanego czasu działania programu.
+
+Klasa \textit{Crystal} reprezentuje rzeczywisty kryształ, który będzie poddany symulacji zaniku sygnału luminescencyjnego. Zawiera on w sobie inne obiekty takie jak:
+
+\begin{itemize}
+\item Elektrony
+\item Dziury elektronowe
+\item Obiekty odpowiadające defektom sieci krystalicznej - tzw. pułapki
+\end{itemize}
+
+\section{Opis działania programu}
+@TODO MOŻLIWE ŻE TU SIE COŚ ZMIENI
+
+
+W celu otrzymania danych niezbędnych do wygenerowania wykresu zależności między ilością elektronów w pułapkach a upływem czasu uruchomiono stworzony program. Obiekt \textit{Crystal} w swoim konstruktorze generuje podaną ilość dziur elektronowych, pułapek oraz elektronów, a następnie przechowuje je w oddzielnych wektorach/MULTIMAPIE ?!?!?!. Dla każdej z tych cząstek wywoływany jest konstruktor (ustawiający współrzędne położenia) z argumentami, które są losowane z podanego wcześniej przedziału (wartości są podane w Angstremach tj. 1 Å = $10^{-10}$m. Jednostka ta nie jest jednostką układu SI, lecz jest stosowana w fizyce przy opisywaniu obiektów i zjawisk zachodzących w skali atomowej). Jak podkreślono wcześniej, symulacja zakłada, że na jej starcie każdy elektron znajduje się w pułapce. Powoduje to, że para elektron - pułapka ma identyczne współrzędne położenia, ale także obiekt klasy \textit{Trap} przyjmuje wskaźnik na uwięziony w nim elektron.
+
+Następnie za pomocą metody \textit{startSimulation(int time)} obiektu klasy \textit{Crystal} rozpoczynana jest symulacja. Symulowany upływ czasu  zależy od wartości argumentu \textit{time}, który jest wyrażony w dniach tj. wywołanie \emph{startSimulation(365)} oznacza rozpoczęcie działania symulacji symulującej efekt zaniku sygnału luminescencyjnego w czasie 1 roku.
+
