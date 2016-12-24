@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  20 DEC 2016 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  23 DEC 2016 16:42
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -622,13 +622,13 @@ File: tunelowanie.png Graphic file (type png)
 Package pdftex.def Info: tunelowanie.png used on input line 40.
 (pdftex.def)             Requested size: 284.52756pt x 224.30595pt.
  [7 <./strukturapasmowa.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
 ) [8 <./tunelowanie.png>]
 \openout2 = `technologie.aux'.
 
@@ -658,11 +658,16 @@ Package pdftex.def Info: strukturaprojektu.png used on input line 6.
 
 
 
- <./strukturaprojektu.png>]) [12] [13]
+ <./strukturaprojektu.png>] [12]
+<example.png, id=64, 642.4pt x 385.44pt>
+File: example.png Graphic file (type png)
+ <use example.png>
+Package pdftex.def Info: example.png used on input line 45.
+(pdftex.def)             Requested size: 426.79134pt x 256.07912pt.
+) [13 <./example.png>]
 \openout2 = `wynik.aux'.
 
-
-(wynik.tex
+ (wynik.tex
 Rozdzia\PlPrIeC {\l } 4.
 ) [14
 
@@ -680,13 +685,13 @@ Rozdzia\PlPrIeC {\l } 5.
 ] (Praca.aux (tytul.aux) (wstep.aux) (technologie.aux) (implementacja.aux) (wyn
 ik.aux) (wnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 2899 strings out of 493333
- 38970 string characters out of 3139196
- 107999 words of memory out of 3000000
- 6308 multiletter control sequences out of 15000+200000
+ 2906 strings out of 493333
+ 39063 string characters out of 3139196
+ 110020 words of memory out of 3000000
+ 6314 multiletter control sequences out of 15000+200000
  40318 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,7n,43p,1062b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,7n,43p,1044b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
 r\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts
 \pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\olav\AppData\Local\MiKTeX\
@@ -704,9 +709,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (15 pages, 428901 bytes).
+Output written on Praca.pdf (15 pages, 447452 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
+ 385 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

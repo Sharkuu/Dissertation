@@ -11,4 +11,6 @@
 \contentsline {section}{\numberline {3.1}Klasy}{12}
 \contentsline {section}{\numberline {3.2}Opis dzia\IeC {\l }ania programu}{12}
 \contentsline {chapter}{\numberline {4}Analiza wynik\IeC {\'o}w}{14}
+\contentsline {section}{\numberline {4.1}Wygenerowane wykresy}{14}
+\contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{14}
 \contentsline {chapter}{\numberline {5}Wnioski}{15}
