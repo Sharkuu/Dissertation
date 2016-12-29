@@ -1,13 +1,7 @@
 //
 // Created by olav on 10.10.2016.
 //
-/*
- *
- * @TODO
- * rekombinacja dziura-elektorn
- * prawdopodobienstwo tunelowania
- *
- * */
+
 #include "Trap.h"
 
 Trap::Trap(std::vector<double> pos) {

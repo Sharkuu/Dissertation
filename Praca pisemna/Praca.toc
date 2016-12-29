@@ -8,9 +8,12 @@
 \contentsline {section}{\numberline {2.3}System kontroli wersji Git}{10}{section.2.3}
 \contentsline {section}{\numberline {2.4}Wizualizacja wynik\IeC {\'o}w - Gnuplot}{11}{section.2.4}
 \contentsline {chapter}{\numberline {3}Implementacja}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Klasy}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Opis dzia\IeC {\l }ania programu}{13}{section.3.2}
-\contentsline {chapter}{\numberline {4}Analiza wynik\IeC {\'o}w}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Wygenerowane wykresy}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{15}{section.4.2}
-\contentsline {chapter}{\numberline {5}Wnioski}{16}{chapter.5}
+\contentsline {section}{\numberline {3.1}Kod}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Konwencja nazw}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Formatowanie i dokumentacja}{13}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Klasy}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Opis dzia\IeC {\l }ania programu}{14}{section.3.3}
+\contentsline {chapter}{\numberline {4}Analiza wynik\IeC {\'o}w}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Wygenerowane wykresy}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{16}{section.4.2}
+\contentsline {chapter}{\numberline {5}Wnioski}{17}{chapter.5}

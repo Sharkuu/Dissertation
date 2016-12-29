@@ -4,35 +4,12 @@
 
 #include "Crystal.h"
 
-
-Crystal::Crystal(unsigned long n) {
-    double min_range, max_range;
-    this->amount_electrons[0] = 0;
-    std::cout << " Enter min position of traps: \n";
-    std::cin >> min_range;
-    std::cout << " Enter max position of traps: \n";
-    std::cin >> max_range;
-    for (unsigned long i = 0; i < n; i++) {
-        std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
-                                (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
-                                (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range};
-        Trap trap(pos);
-        Electron *e = new Electron(pos);
-        trap.setElectron(e);
-        this->electrons.push_back(e);
-        this->el_traps.push_back(trap);
-        pos.clear();
-
-
-    }
-}
-
 Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, double max_range) {
     this->amount_electrons[0] = n_el;
+    std::uniform_real_distribution<double> unif(min_range, max_range);
+    std::default_random_engine re;
     for (unsigned long i = 0; i < n_el; i++) {
-        std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
-                                (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
-                                (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range};
+        std::vector<double> pos{unif(re), unif(re), unif(re)};
         Trap trap(pos);
         Electron *e = new Electron(pos);
         trap.setElectron(e);
@@ -41,9 +18,7 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
         pos.clear();
     }
     for (unsigned long i = 0; i < n_holes; i++) {
-        std::vector<double> pos{(max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
-                                (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range,
-                                (max_range - min_range) * ((double) std::rand() / (double) RAND_MAX) + min_range};
+        std::vector<double> pos{unif(re), unif(re), unif(re)};
         Trap trap(pos);
         //this->traps.push_back(trap);
         ElectronHole *hole = new ElectronHole(pos, trap);
@@ -85,7 +60,7 @@ double Crystal::calculateTau(double distance, ElectronHole *el_hole, const Trap 
     return (1 / S) * exp((trap.getEnergy() - el_hole->getEnergy()) * distance);
 }
 
-double Crystal::tunnelEffectProbability(double time, double tau) {
+double Crystal::tunnelEffectProbability(double time, double tau) const {
     return exp(-time / tau);
 
 }
@@ -93,13 +68,9 @@ double Crystal::tunnelEffectProbability(double time, double tau) {
 void Crystal::tunnelEffect(Trap &trap, int time) {
     int n = 0;
     for (auto i : this->electron_holes) {
-        //std::cout << this->tunnelEffectProbability(time*86400, this->calculateTau(this->calculateDistance(trap, i), i, trap))
-        //          << std::endl;
         if (this->tunnelEffectProbability(time, this->calculateTau(this->calculateDistance(trap, i), i, trap)) <
             ((double) std::rand() / (double) (RAND_MAX)) && i->getTrap() != NULL) {
-            //Electron *e = trap.getElectron();
             trap.removeElectron(std::vector<double>{i->getX(), i->getY(), i->getZ()});
-            //i->getTrap()->setElectron(e);
             i->nullTrap();
             electron_holes.erase(electron_holes.begin() + n);
             delete i;
@@ -114,10 +85,10 @@ void Crystal::startSimulation(int time) {
         for (auto i = this->el_traps.begin(); i != el_traps.end(); ++i) {
             if (i->isOccupied()) {
                 this->tunnelEffect(*i, 86400);
-
             }
         }
-        this->amount_electrons[t*86400] = this->countElectrons();
+        this->amount_electrons[t * 86400] = this->countElectrons();
+
     }
 }
 
@@ -130,17 +101,11 @@ unsigned long Crystal::countElectrons() const {
     return electrons;
 }
 
-void Crystal::saveToFile() {
+void Crystal::saveToFile(std::string name) const{
     std::ofstream file;
-    file.open("./example2.txt");
+    file.open(name);
     for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
-        file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
-    }
-    file.close();
-
-    file.open("./example1.txt");
-    for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
-        file << (it->first) << ";" << (double) it->second / this->amount_electrons[0]<< "\n";
+        file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0] << "\n";
     }
     file.close();
 

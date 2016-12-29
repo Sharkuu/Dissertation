@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.6)
 project(Dissertation)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
+set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -g -Wall")
+SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+SET(BUILD_SHARED_LIBRARIES OFF)
 
 set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Trap.h Functions.cpp Functions.h ElectronHole.cpp ElectronHole.h Crystal.cpp Crystal.h)
 add_executable(Dissertation ${SOURCE_FILES})

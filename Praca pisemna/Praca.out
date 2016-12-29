@@ -8,9 +8,12 @@
 \BOOKMARK [1][-]{section.2.3}{System kontroli wersji Git}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.4}{Wizualizacja wynik\363w - Gnuplot}{chapter.2}% 9
 \BOOKMARK [0][-]{chapter.3}{Implementacja}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Klasy}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Opis dzia\233ania programu}{chapter.3}% 12
-\BOOKMARK [0][-]{chapter.4}{Analiza wynik\363w}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Wygenerowane wykresy}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{Analiza wykres\363w}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{Wnioski}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Kod}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Konwencja nazw}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{Formatowanie i dokumentacja}{section.3.1}% 13
+\BOOKMARK [1][-]{section.3.2}{Klasy}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Opis dzia\233ania programu}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Analiza wynik\363w}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Wygenerowane wykresy}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Analiza wykres\363w}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Wnioski}{}% 19
