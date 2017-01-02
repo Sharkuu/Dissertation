@@ -60,7 +60,7 @@ double Crystal::calculateTau(double distance, ElectronHole *el_hole, const Trap 
     return (1 / S) * exp((trap.getEnergy() - el_hole->getEnergy()) * distance);
 }
 
-double Crystal::tunnelEffectProbability(double time, double tau) const {
+double Crystal::tunnelEffectProbability(double time, double tau) {
     return exp(-time / tau);
 
 }
@@ -88,6 +88,7 @@ void Crystal::startSimulation(int time) {
             }
         }
         this->amount_electrons[t * 86400] = this->countElectrons();
+        std::cout<<t<<std::endl;
 
     }
 }
@@ -101,10 +102,12 @@ unsigned long Crystal::countElectrons() const {
     return electrons;
 }
 
-void Crystal::saveToFile(std::string name) const{
+void Crystal::saveToFile(std::string name){
     std::ofstream file;
     file.open(name);
-    for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
+    auto it = this->amount_electrons.cbegin();
+    it++;
+    for (; it != this->amount_electrons.cend(); ++it) {
         file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0] << "\n";
     }
     file.close();

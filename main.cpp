@@ -12,8 +12,8 @@
 #include "Functions.h"
 
 int main(int argc, char *argv[]) {
-    Crystal crystal = Crystal(1e6, 1e6, -900, 900);
-    crystal.startSimulation(1825);
+    Crystal crystal = Crystal(1e4, 1e4, -800, 800);
+    crystal.startSimulation(1000);
     std::cout << crystal.countElectrons();
     crystal.saveToFile("example.txt");
 

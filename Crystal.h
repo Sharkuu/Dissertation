@@ -99,13 +99,13 @@ public:
      * @param time czas
      * @param tau wartość tau
      * @see calculateTau()
-     * @return wartość prawdopodobieństwa
+     * @return wartość prawdopod obieństwa
      */
-    static double tunnelEffectProbability(double time, double tau) const;
+    static double tunnelEffectProbability(double time, double tau);
 
     unsigned long countElectrons() const;
 
-    void saveToFile(std::string) const;
+    void saveToFile(std::string);
 };
 
 

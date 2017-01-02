@@ -15,5 +15,5 @@
 \contentsline {section}{\numberline {3.3}Opis dzia\IeC {\l }ania programu}{14}{section.3.3}
 \contentsline {chapter}{\numberline {4}Analiza wynik\IeC {\'o}w}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}Wygenerowane wykresy}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{16}{section.4.2}
-\contentsline {chapter}{\numberline {5}Wnioski}{17}{chapter.5}
+\contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{20}{section.4.2}
+\contentsline {chapter}{\numberline {5}Wnioski}{21}{chapter.5}

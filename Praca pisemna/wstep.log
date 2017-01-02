@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  28 DEC 2016 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 16:47
 entering extended mode
 **./wstep.tex
 (wstep.tex
@@ -3329,25 +3329,30 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no : in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{wzor}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.46 \cite{wzor}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
+
+LaTeX Warning: Citation `wzor' on page  undefined on input line 46.
+
+Missing character: There is no ] in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--47
 []
  []
 
 
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 \begin{equation}
-                     
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 47--47
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 45--47
 [] 
  []
 
@@ -3374,8 +3379,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 52--52
  []
 
 
-Overfull \hbox (50.56444pt too wide) detected at line 54
-\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S[]e[]
+Overfull \hbox (50.56444pt too wide) detected at line 55
+[]\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S[]e[]
  []
 
 
@@ -3385,7 +3390,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 g
+l.58 g
       dzie:
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3397,7 +3402,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
+Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
 [] 
  []
 
@@ -3493,7 +3498,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
 
-Overfull \hbox (6.43404pt too wide) in paragraph at lines 61--62
+Overfull \hbox (6.43404pt too wide) in paragraph at lines 62--63
 \OML/cmm/m/it/10 $
  []
 
@@ -3536,7 +3541,7 @@ Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
 <write> ...ing: Reference `eq:1' on page \thepage 
                                                   \space undefined\on@line .
-l.65 Wzór \ref{eq:1}
+l.66 Wzór \ref{eq:1}
                       wynika z rozwiązania 1D równania Schrödingera z bar...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3545,7 +3550,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:1' on page  undefined on input line 65.
+LaTeX Warning: Reference `eq:1' on page  undefined on input line 66.
 
 Missing character: There is no w in font nullfont!
 Missing character: There is no y in font nullfont!
@@ -3612,12 +3617,12 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 65--66
+Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 65--66
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 66--67
 []
  []
 
@@ -3629,10 +3634,10 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 65--66
 
  
 Here is how much of TeX's memory you used:
- 18 strings out of 493333
- 197 string characters out of 3139196
+ 19 strings out of 493333
+ 203 string characters out of 3139196
  55242 words of memory out of 3000000
- 3647 multiletter control sequences out of 15000+200000
+ 3648 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  18i,3n,21p,734b,118s stack positions out of 5000i,500n,10000p,200000b,50000s

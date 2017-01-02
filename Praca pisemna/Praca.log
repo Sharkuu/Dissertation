@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  29 DEC 2016 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 16:47
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -544,7 +544,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 (Praca.aux (tytul.aux) (wstep.aux) (technologie.aux) (implementacja.aux)
-(wynik.aux) (wnioski.aux))
+(wynik.aux
+
+LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
+
+
+LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
+
+
+LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
+
+
+LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
+
+
+LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
+
+) (wnioski.aux))
 \openout1 = `Praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -721,13 +737,13 @@ File: tunelowanie.png Graphic file (type png)
 Package pdftex.def Info: tunelowanie.png used on input line 38.
 (pdftex.def)             Requested size: 284.52756pt x 224.30595pt.
  [7 <./strukturapasmowa.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
 ) [8 <./tunelowanie.png>]
 \openout2 = `technologie.aux'.
 
@@ -773,22 +789,55 @@ Package pdftex.def Info: example.png used on input line 69.
 
  (wynik.tex
 Rozdzia\PlPrIeC {\l } 4.
-) [16
+<wykres2.png, id=215, 642.4pt x 385.44pt>
+File: wykres2.png Graphic file (type png)
+ <use wykres2.png>
+Package pdftex.def Info: wykres2.png used on input line 14.
+(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+ [16
 
 
 
 ]
+File: wykres2.png Graphic file (type png)
+
+<use wykres2.png>
+Package pdftex.def Info: wykres2.png used on input line 22.
+(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+File: wykres2.png Graphic file (type png)
+ <use wykres2.png>
+Package pdftex.def Info: wykres2.png used on input line 30.
+(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+ [17 <./wykres2.png>]
+File: wykres2.png Graphic file (type png)
+ <use wykres2.png>
+Package pdftex.def Info: wykres2.png used on input line 38.
+(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+
+[18]
+File: wykres2.png Graphic file (type png)
+ <use wykres2.png>
+Package pdftex.def Info: wykres2.png used on input line 46.
+(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+
+
+LaTeX Warning: Reference `asd' on page 19 undefined on input line 57.
+
+
+LaTeX Warning: Reference `asd' on page 19 undefined on input line 57.
+
+) [19] [20]
 \openout2 = `wnioski.aux'.
 
  (wnioski.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [17
+) [21
 
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
- [18
+ [22
 
 
 ]
@@ -799,16 +848,23 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
 (rerunfilecheck)             Checksum: EEE2E6B6BEF576C292188FDC573EEBF6;1249.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 6441 strings out of 493333
- 92594 string characters out of 3139196
- 187388 words of memory out of 3000000
- 9779 multiletter control sequences out of 15000+200000
+ 6457 strings out of 493333
+ 92757 string characters out of 3139196
+ 187448 words of memory out of 3000000
+ 9785 multiletter control sequences out of 15000+200000
  40318 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,43p,1148b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,7n,43p,1148b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 cbx1440.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
 \dpi600\ectt1200.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
@@ -827,9 +883,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (18 pages, 610544 bytes).
+Output written on Praca.pdf (22 pages, 623385 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

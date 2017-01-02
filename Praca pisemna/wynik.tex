@@ -1,18 +1,57 @@
 \chapter{Analiza wyników}
 
-Program był tworzony, testowany oraz wykonywany na komputerze o podanej specjalizacji:
-\begin{itemize}
-\item Procesor: Intel Core i7-6700HQ (4 rdzenie)
-\item Pamięć: 8 GB (SO-DIMM DDR4, 2133MHz)
-\end{itemize}
+Program był tworzony, testowany oraz wykonywany na komputerze posiadającym 4 rdzeniowy procesor Intel Core i7-6700HQ oraz pamięć 8 GB (SO-DIMM DDR4, 2133MHz).
+
 
 \section{Wygenerowane wykresy}
-W celu analizy otrzymanych danych, program został uruchomiony pewną ilość razy, za każdym razem z innymi danymi wejściowymi. Starano się tak dopasować ich wartości, aby gęstość rozkładu cząstek była stała.
+W celu analizy otrzymanych danych, program został uruchomiony pewną ilość razy, za każdym razem z innymi danymi wejściowymi. Otrzymane wykresy przedstawiają zmianę ilości elektronów znajdujących się w pułapkach w czasie trwania symulacji.
 
-------------------
+\begin{itemize}
 
-TU WYKRESY Z PODPISAMI JAKIE BYŁY ARGUENTY, CZAS WYKONANIA ,ILE PAMIECI UZYWALO(?)
+\item Ilość elektronów: $10^{4}$, ilość dziur elektronowych: $10^{4}$, zakres w którym losowane są położenia cząstek: [-800,800], symulowany czas: 1000 dni.
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{wykres2}
+\caption{ Czas wykonywania symulacji: xx}
+\label{fig:Tunelowanie}
+\end{figure}
 
----------
+\item Ilość elektronów: $10^{4}$, ilość dziur elektronowych: $10^{4}$, zakres w którym losowane są położenia cząstek: [-900,900], symulowany czas: 5 lat.
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{wykres2}
+\caption{ Czas wykonywania symulacji: 13h}
+\label{fig:Tunelowanie}
+\end{figure}
+
+\item Ilość elektronów: $10^{3}$, ilość dziur elektronowych: $10^{3}$, zakres w którym losowane są położenia cząstek: [-500,500], symulowany czas: 1000 dni.
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{wykres2}
+\caption{ Czas wykonywania symulacji: xx}
+\label{fig:Tunelowanie}
+\end{figure}
+
+\item Ilość elektronów: $10^{2}$, ilość dziur elektronowych: $10^{2}$, zakres w którym losowane są położenia cząstek: [-400,400], symulowany czas: 1000 dni.
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{wykres2}
+\caption{ Czas wykonywania symulacji: xx}
+\label{fig:Tunelowanie}
+\end{figure}
+
+\item Ilość elektronów: $10^{2}$, ilość dziur elektronowych: $10^{2}$, zakres w którym losowane są położenia cząstek: [-200,200], symulowany czas: 1000 dni.
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{wykres2}
+\caption{ Czas wykonywania symulacji: xx}
+\label{fig:Tunelowanie}
+\end{figure}
+
+
+
+
+\end{itemize}
 \section{Analiza wykresów}
-Analizując otrzymane wykresy można zauważyć znaczny spadek ilości elektronów w pułapkach na samym początku wykonywania programu. Jest to spowodowane tym, że wszystkie współrzędne cząstek są losowane z podanego zakresu. Oznacza to, że na początku symulacji wiele pułapek elektronowych zawierających elektrony znajduje się bardzo blisko centrów rekombinacji. Jak widać w równaniach (1.1) oraz (1.2) odległość między nimi znacząco wpływa na prawdopodobieństwo zajścia efektu tunelowego, stąd też wynika zaobserwowany znaczący spadek ilości wzbudzonych elektronów.
+Analizując otrzymane wykresy można zauważyć znaczny spadek ilości elektronów w pułapkach na samym początku wykonywania programu. Jest to spowodowane faktem, że wszystkie współrzędne cząstek są losowane z podanego zakresu. Oznacza to, że na początku symulacji wiele pułapek elektronowych zawierających elektrony znajduje się bardzo blisko centr rekombinacji. Powołując się na równania \ref{eq:1} oraz \ref{eq:2} obserwujemy, że odległość między pułapką a centrum rekombinacji znacząco wpływa na prawdopodobieństwo zajścia efektu tunelowego, co skutkuje zaobserwowanym znaczącym początkowym spadek ilości wzbudzonych elektronów. Następnie można zaobserwować, że ilość elektronów znajdujących się w pułapkach zaczyna maleć z dużo mniejszą częstotliwością. Wykres zaczyna wtedy przypominać funkcję liniową. Obrazuje to fakt występowania atermicznego zaniku luminescencyjnego, który zachodzi samoistnie dzięki zjawisku tunelowania, bez dostarczania dodatkowej energii. 
+Ważnym parametrem symulacji jest zakres z którego losowane są wartości położenia dla cząstek. Porównując ze sobą wykres \ref{asd} oraz \ref{asd} gdzie ilość elektronów oraz symulowany czas są takie same, a zakres wartości położeń cząstki znacząco się różni, zaobserwowano, że im większa gęstość ładunków tym efektu tunelowania zachodzi szybciej, co jest zgodne z przewidywaniami wynikającymi ze wzoru \ref{eq:2}.
