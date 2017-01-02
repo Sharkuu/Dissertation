@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 18:36
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -779,7 +779,7 @@ Package pdftex.def Info: strukturaprojektu.png used on input line 6.
 
 
  <./strukturaprojektu.png>] [13] [14]
-<example.png, id=219, 642.4pt x 385.44pt>
+<example.png, id=220, 642.4pt x 385.44pt>
 File: example.png Graphic file (type png)
  <use example.png>
 Package pdftex.def Info: example.png used on input line 69.
@@ -789,7 +789,7 @@ Package pdftex.def Info: example.png used on input line 69.
 
  (wynik.tex
 Rozdzia\PlPrIeC {\l } 4.
-<wykres2.png, id=225, 642.4pt x 385.44pt>
+<wykres2.png, id=226, 642.4pt x 385.44pt>
 File: wykres2.png Graphic file (type png)
  <use wykres2.png>
 Package pdftex.def Info: wykres2.png used on input line 15.
@@ -831,7 +831,7 @@ LaTeX Warning: Reference `asd' on page 20 undefined on input line 59.
 
  (podsumowanie.tex
 Rozdzia\PlPrIeC {\l } 5.
-<przyklad_ulepszony.png, id=258, 642.4pt x 385.44pt>
+<przyklad_ulepszony.png, id=259, 642.4pt x 385.44pt>
 File: przyklad_ulepszony.png Graphic file (type png)
 
 <use przyklad_ulepszony.png>
@@ -870,7 +870,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
 Here is how much of TeX's memory you used:
  6476 strings out of 493333
  93118 string characters out of 3139196
- 187847 words of memory out of 3000000
+ 188847 words of memory out of 3000000
  9793 multiletter control sequences out of 15000+200000
  40318 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -893,9 +893,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (23 pages, 637037 bytes).
+Output written on Praca.pdf (23 pages, 637373 bytes).
 PDF statistics:
- 656 PDF objects out of 1000 (max. 8388607)
+ 657 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
