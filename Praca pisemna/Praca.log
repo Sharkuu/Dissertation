@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 19:00
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -753,7 +753,7 @@ Rozdzia\PlPrIeC {\l } 2.
 
 
 
-] <clion.png, id=182, 1156.32pt x 621.522pt>
+] <clion.png, id=184, 1156.32pt x 621.522pt>
 File: clion.png Graphic file (type png)
  <use clion.png>
 Package pdftex.def Info: clion.png used on input line 22.
@@ -768,7 +768,7 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 3.
-<strukturaprojektu.png, id=198, 286.671pt x 281.25075pt>
+<strukturaprojektu.png, id=200, 286.671pt x 281.25075pt>
 File: strukturaprojektu.png Graphic file (type png)
 
 <use strukturaprojektu.png>
@@ -779,7 +779,7 @@ Package pdftex.def Info: strukturaprojektu.png used on input line 6.
 
 
  <./strukturaprojektu.png>] [13] [14]
-<example.png, id=220, 642.4pt x 385.44pt>
+<example.png, id=222, 642.4pt x 385.44pt>
 File: example.png Graphic file (type png)
  <use example.png>
 Package pdftex.def Info: example.png used on input line 69.
@@ -789,7 +789,7 @@ Package pdftex.def Info: example.png used on input line 69.
 
  (wynik.tex
 Rozdzia\PlPrIeC {\l } 4.
-<wykres2.png, id=226, 642.4pt x 385.44pt>
+<wykres2.png, id=228, 642.4pt x 385.44pt>
 File: wykres2.png Graphic file (type png)
  <use wykres2.png>
 Package pdftex.def Info: wykres2.png used on input line 15.
@@ -831,7 +831,7 @@ LaTeX Warning: Reference `asd' on page 20 undefined on input line 59.
 
  (podsumowanie.tex
 Rozdzia\PlPrIeC {\l } 5.
-<przyklad_ulepszony.png, id=259, 642.4pt x 385.44pt>
+<przyklad_ulepszony.png, id=261, 642.4pt x 385.44pt>
 File: przyklad_ulepszony.png Graphic file (type png)
 
 <use przyklad_ulepszony.png>
@@ -868,10 +868,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 6476 strings out of 493333
- 93118 string characters out of 3139196
- 188847 words of memory out of 3000000
- 9793 multiletter control sequences out of 15000+200000
+ 6478 strings out of 493333
+ 93131 string characters out of 3139196
+ 188872 words of memory out of 3000000
+ 9794 multiletter control sequences out of 15000+200000
  40318 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,7n,43p,1148b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -893,9 +893,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (23 pages, 637373 bytes).
+Output written on Praca.pdf (23 pages, 638622 bytes).
 PDF statistics:
- 657 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
