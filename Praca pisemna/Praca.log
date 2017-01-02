@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  2 JAN 2017 19:50
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -544,23 +544,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 (Praca.aux (tytul.aux) (wstep.aux) (technologie.aux) (implementacja.aux)
-(wynik.aux
-
-LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
-
-
-LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
-
-
-LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
-
-
-LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
-
-
-LaTeX Warning: Label `fig:Tunelowanie' multiply defined.
-
-) (podsumowanie.aux) (bibliografia.aux))
+(wynik.aux) (podsumowanie.aux) (bibliografia.aux))
 \openout1 = `Praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -789,63 +773,60 @@ Package pdftex.def Info: example.png used on input line 69.
 
  (wynik.tex
 Rozdzia\PlPrIeC {\l } 4.
-<wykres2.png, id=228, 642.4pt x 385.44pt>
+<q.jpg, id=228, 628.3475pt x 628.3475pt>
+File: q.jpg Graphic file (type jpg)
+ <use q.jpg>
+Package pdftex.def Info: q.jpg used on input line 10.
+(pdftex.def)             Requested size: 483.69484pt x 284.5275pt.
+
+<wykres2.png, id=229, 642.4pt x 385.44pt>
 File: wykres2.png Graphic file (type png)
  <use wykres2.png>
-Package pdftex.def Info: wykres2.png used on input line 15.
-(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+Package pdftex.def Info: wykres2.png used on input line 16.
+(pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
  [16
 
 
 
-]
-File: wykres2.png Graphic file (type png)
+ <./q.jpg>]
+<wykres1.png, id=235, 642.4pt x 385.44pt>
+File: wykres1.png Graphic file (type png)
+ <use wykres1.png>
+Package pdftex.def Info: wykres1.png used on input line 22.
+(pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
 
-<use wykres2.png>
-Package pdftex.def Info: wykres2.png used on input line 23.
-(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
-File: wykres2.png Graphic file (type png)
- <use wykres2.png>
-Package pdftex.def Info: wykres2.png used on input line 31.
-(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
- [17 <./wykres2.png>]
-File: wykres2.png Graphic file (type png)
- <use wykres2.png>
-Package pdftex.def Info: wykres2.png used on input line 39.
-(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
+<wykres2_2.png, id=236, 642.4pt x 385.44pt>
+File: wykres2_2.png Graphic file (type png)
+ <use wykres2_2.png>
+Package pdftex.def Info: wykres2_2.png used on input line 29.
+(pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
+ [17 <./wykres2.png> <./wykres1.png>] <wykres3.png, id=243, 642.4pt x 385.44pt>
+File: wykres3.png Graphic file (type png)
 
-[18]
-File: wykres2.png Graphic file (type png)
- <use wykres2.png>
-Package pdftex.def Info: wykres2.png used on input line 47.
-(pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
- [19]
-
-LaTeX Warning: Reference `asd' on page 20 undefined on input line 59.
-
-
-LaTeX Warning: Reference `asd' on page 20 undefined on input line 59.
-
-) [20]
+<use wykres3.png>
+Package pdftex.def Info: wykres3.png used on input line 39.
+(pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
+ [18 <./wykres2_2.png> <./wykres3.png>]) [19]
 \openout2 = `podsumowanie.aux'.
 
- (podsumowanie.tex
+
+(podsumowanie.tex
 Rozdzia\PlPrIeC {\l } 5.
-<przyklad_ulepszony.png, id=261, 642.4pt x 385.44pt>
+<przyklad_ulepszony.png, id=263, 642.4pt x 385.44pt>
 File: przyklad_ulepszony.png Graphic file (type png)
 
 <use przyklad_ulepszony.png>
 Package pdftex.def Info: przyklad_ulepszony.png used on input line 13.
 (pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
- [21
+ [20
 
 
 
-]) [22 <./przyklad_ulepszony.png>]
+]) [21 <./przyklad_ulepszony.png>]
 \openout2 = `bibliografia.aux'.
 
 
-(bibliografia.tex) [23
+(bibliografia.tex) [22
 
 
 
@@ -858,23 +839,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
 (rerunfilecheck)             Checksum: DE0ACBC9C10484FFF3E258876B93696B;1382.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 6478 strings out of 493333
- 93131 string characters out of 3139196
- 188872 words of memory out of 3000000
- 9794 multiletter control sequences out of 15000+200000
+ 6499 strings out of 493333
+ 93413 string characters out of 3139196
+ 188946 words of memory out of 3000000
+ 9811 multiletter control sequences out of 15000+200000
  40318 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,43p,1148b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,7n,43p,1148b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 cbx1440.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
 \dpi600\ectt1200.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
@@ -893,9 +867,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (23 pages, 638622 bytes).
+Output written on Praca.pdf (22 pages, 680509 bytes).
 PDF statistics:
- 662 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 665 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

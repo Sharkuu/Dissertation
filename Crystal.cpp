@@ -105,9 +105,8 @@ unsigned long Crystal::countElectrons() const {
 void Crystal::saveToFile(std::string name){
     std::ofstream file;
     file.open(name);
-    auto it = this->amount_electrons.cbegin();
-    it++;
-    for (; it != this->amount_electrons.cend(); ++it) {
+
+    for (auto it = this->amount_electrons.cbegin(); it != this->amount_electrons.cend(); ++it) {
         file << this->changeTime(it->first) << ";" << (double) it->second / this->amount_electrons[0] << "\n";
     }
     file.close();
