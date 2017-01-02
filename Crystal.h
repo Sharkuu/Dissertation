@@ -99,7 +99,7 @@ public:
      * @param time czas
      * @param tau wartość tau
      * @see calculateTau()
-     * @return wartość prawdopod obieństwa
+     * @return wartość prawdopodobieństwa
      */
     static double tunnelEffectProbability(double time, double tau);
 
