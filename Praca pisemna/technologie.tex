@@ -25,7 +25,20 @@ Program był tworzony z użyciem wieloplatformowego zintegrowanego środowiska p
 \end{figure}
 
 Dużą zaletą podczas pracy z IDE produkcji JetBrains jest jego intuicyjna i prosta obsługa całości projektu. Dodatkowo, CLion posiada możliwość bezpośredniego połączenia projektu z wybranym serwerem kontroli wersji co uprościło pracę nad projektem. Z racji tego, że w chwili obecnej program do kompilacji używa tylko systemu CMake, niezbędne było nauczenie się jego obsługi  oraz odpowiedniej składni.
+Ostatecznie kod pliku \emph{CMakeLists.txt} wygląda następująco:
+\begin{verbatim}
 
+cmake_minimum_required(VERSION 3.6)
+project(Dissertation)
+set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -g -Wall")
+SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+SET(BUILD_SHARED_LIBRARIES OFF)
+set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Trap.h Functions.cpp Functions.h ElectronHole.cpp ElectronHole.h Crystal.cpp Crystal.h)
+add_executable(Dissertation ${SOURCE_FILES})
+target_link_libraries(Dissertation)
+
+\end{verbatim}
 \section{System kontroli wersji Git}
 
 System kontroli wersji śledzi wszystkie zmiany dokonywane w plikach i umożliwia przywołanie dowolnej wcześniejszej wersji. Jest to przydatne narzędzie w łączeniu zmian dokonanych przez wiele osób w różnym czasie.
@@ -48,3 +61,6 @@ Gnuplot jest narzędziem do kreślenia wykresów 2D i 3D, sterowanym z wiersza p
 \item Jezeli uruchomimy program bez podania zadnych parametrow (polecenie gnuplot), bedzie on pracowal w trybie interaktywnym (bedzie oczekiwal na komendy uzytkownika i kolejno je wykonywal). Aby zakonczyc prace, nalezy wpisac komende exit, quit lub q.
 \item Jezeli podamy parametr (polecenie gnuplot plik), program wykona polecenia zawarte w pliku i zakonczy prace (tryb wsadowy)
 \end{itemize}
+
+\section{Valgrind}
+W czasie tworzenia aplikacji użyto narzędzia \textbf{Valgrind}. Służy on do debugowania, wykrywania wycieków pamięci oraz profilowania aplikacji. Dzięki wykorzystaniu tego narzędzia upewniono się, że nie ma żadnych wycieków pamięci, zwiększono szybkość działania programu, oraz zmniejszono ilość błędów występujących na początku tworzenia programu.
