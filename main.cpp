@@ -16,6 +16,5 @@ int main(int argc, char *argv[]) {
     crystal.startSimulation(1000);
     std::cout << crystal.countElectrons();
     crystal.saveToFile("example.txt");
-    //Crystal crystal = Crystal(1e4, 2e4, -1e3, 1e3);
     return 0;
 }
