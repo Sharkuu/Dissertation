@@ -17,5 +17,5 @@
 \contentsline {chapter}{\numberline {4}Analiza wynik\IeC {\'o}w}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Wygenerowane wykresy}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{18}{section.4.2}
-\contentsline {chapter}{\numberline {5}Dalszy rozw\IeC {\'o}j programu}{20}{chapter.5}
-\contentsline {chapter}{\numberline {6}Podsumowanie}{22}{chapter.6}
+\contentsline {chapter}{\numberline {5}Dalszy rozw\IeC {\'o}j programu}{22}{chapter.5}
+\contentsline {chapter}{\numberline {6}Podsumowanie}{24}{chapter.6}

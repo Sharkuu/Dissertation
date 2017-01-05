@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  19 DEC 2016 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  5 JAN 2017 19:24
 entering extended mode
 **./tytul.tex
 (tytul.tex
@@ -161,7 +161,7 @@ Overfull \hbox (13.25003pt too wide) in paragraph at lines 10--10
 
 ! Undefined control sequence.
 l.13 {\bf
-         \Large\textsf{Marcin Fabrykowski}}\\
+         \Large\textsf{Olaf Schab}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -170,7 +170,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.13 {\bf\Large
-               \textsf{Marcin Fabrykowski}}\\
+               \textsf{Olaf Schab}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -178,18 +178,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (28.69452pt too wide) in paragraph at lines 13--13
- []\OT1/cmss/m/n/10 Marcin 
+Overfull \hbox (17.61115pt too wide) in paragraph at lines 13--13
+ []\OT1/cmss/m/n/10 Olaf 
  []
 
 
-Overfull \hbox (18.72226pt too wide) in paragraph at lines 13--13
- \OT1/cmss/m/n/10 Fab- 
- []
-
-
-Overfull \hbox (35.30566pt too wide) in paragraph at lines 13--13
- \OT1/cmss/m/n/10 rykowski 
+Overfull \hbox (25.13893pt too wide) in paragraph at lines 13--13
+ \OT1/cmss/m/n/10 Schab 
  []
 
 ! Undefined control sequence.
@@ -267,7 +262,7 @@ Overfull \hbox (42.3334pt too wide) in paragraph at lines 15--15
 
 ! Undefined control sequence.
 l.18 {\bf
-         \huge\textsf{System IPS oparty o iptables}}\\
+         \huge\textsf{Symulacja komputerowa zaniku sygna≈Çu luminescencyjneg...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -276,51 +271,98 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.18 {\bf\huge
-              \textsf{System IPS oparty o iptables}}\\
+              \textsf{Symulacja komputerowa zaniku sygna≈Çu luminescencyjneg...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+Missing character: There is no ≈ in font cmss10!
+Missing character: There is no Ç in font cmss10!
 
-Overfull \hbox (30.00005pt too wide) in paragraph at lines 18--18
- []\OT1/cmss/m/n/10 System 
+Overfull \hbox (42.38898pt too wide) in paragraph at lines 18--18
+ []\OT1/cmss/m/n/10 Symulacja 
  []
 
 
-Overfull \hbox (14.72227pt too wide) in paragraph at lines 18--18
- \OT1/cmss/m/n/10 IPS 
+Overfull \hbox (20.88893pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 kom- 
  []
 
 
-Overfull \hbox (26.05562pt too wide) in paragraph at lines 18--18
- \OT1/cmss/m/n/10 oparty 
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 put- 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--18
- \OT1/cmss/m/n/10 o 
+Overfull \hbox (23.9445pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 erowa 
  []
 
 
-Overfull \hbox (14.5pt too wide) in paragraph at lines 18--18
- \OT1/cmss/m/n/10 ipt- 
+Overfull \hbox (26.76395pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 zaniku 
  []
 
 
-Overfull \hbox (8.1389pt too wide) in paragraph at lines 18--18
- \OT1/cmss/m/n/10 a- 
+Overfull \hbox (16.7778pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 syg- 
  []
 
 
-Overfull \hbox (15.83333pt too wide) in paragraph at lines 18--18
- \OT1/cmss/m/n/10 bles 
+Overfull \hbox (15.13892pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 nau 
+ []
+
+
+Overfull \hbox (10.88889pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 lu- 
+ []
+
+
+Overfull \hbox (13.66667pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 mi- 
+ []
+
+
+Overfull \hbox (16.77777pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 nes- 
+ []
+
+
+Overfull \hbox (17.38889pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 cen- 
+ []
+
+
+Overfull \hbox (31.33339pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 cyjnego 
+ []
+
+
+Overfull \hbox (6.83336pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 w 
+ []
+
+
+Overfull \hbox (23.41669pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 skale- 
+ []
+
+
+Overfull \hbox (10.88889pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 ni- 
+ []
+
+
+Overfull \hbox (14.41669pt too wide) in paragraph at lines 18--18
+ \OT1/cmss/m/n/10 ach 
  []
 
 ! Undefined control sequence.
 l.21 {\sf
-          \Large Opiekun:} {\bf\Large\textsf{dr in≈º. Krzysztof Rzecki}}\\
+          \Large Opiekun:} {\bf\Large\textsf{dr in≈º. Grzegorz Gach}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -329,7 +371,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.21 {\sf \Large
-                 Opiekun:} {\bf\Large\textsf{dr in≈º. Krzysztof Rzecki}}\\
+                 Opiekun:} {\bf\Large\textsf{dr in≈º. Grzegorz Gach}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -346,7 +388,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
 l.21 {\sf \Large Opiekun:} {\bf
-                               \Large\textsf{dr in≈º. Krzysztof Rzecki}}\\
+                               \Large\textsf{dr in≈º. Grzegorz Gach}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -355,7 +397,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.21 {\sf \Large Opiekun:} {\bf\Large
-                                     \textsf{dr in≈º. Krzysztof Rzecki}}\\
+                                     \textsf{dr in≈º. Grzegorz Gach}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -375,19 +417,24 @@ Overfull \hbox (10.33334pt too wide) in paragraph at lines 21--21
  []
 
 
-Overfull \hbox (39.16678pt too wide) in paragraph at lines 21--21
- \OT1/cmss/m/n/10 Krzysztof 
+Overfull \hbox (22.20837pt too wide) in paragraph at lines 21--21
+ \OT1/cmss/m/n/10 Grze- 
  []
 
 
-Overfull \hbox (26.97227pt too wide) in paragraph at lines 21--21
- \OT1/cmss/m/n/10 Rzecki 
+Overfull \hbox (17.48616pt too wide) in paragraph at lines 21--21
+ \OT1/cmss/m/n/10 gorz 
+ []
+
+
+Overfull \hbox (21.08337pt too wide) in paragraph at lines 21--21
+ \OT1/cmss/m/n/10 Gach 
  []
 
 ! Undefined control sequence.
 <recently read> \bf 
                     
-l.23 ...{\bf\large\textsf{Krak√≥w, stycze≈Ñ 2013}}
+l.23 ...{\bf\large\textsf{Krak√≥w, stycze≈Ñ 2017}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -397,8 +444,8 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 <argument> \bf \large 
-                      \textsf {Krak√≥w, stycze≈Ñ 2013}
-l.23 ...{\bf\large\textsf{Krak√≥w, stycze≈Ñ 2013}}
+                      \textsf {Krak√≥w, stycze≈Ñ 2017}
+l.23 ...{\bf\large\textsf{Krak√≥w, stycze≈Ñ 2017}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -427,7 +474,7 @@ Overfull \hbox (13.23611pt too wide) in paragraph at lines 23--24
 
 
 Overfull \hbox (20.00006pt too wide) in paragraph at lines 23--24
- \OT1/cmss/m/n/10 2013 
+ \OT1/cmss/m/n/10 2017 
  []
 
 
@@ -801,341 +848,213 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [2]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≥ in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no ô in font cmr10!
+Overfull \hbox (90.22186pt too wide) in paragraph at lines 46--47
+[]\OT1/cmr/bx/n/10 Merytoryczna
+ []
+
+
+Overfull \hbox (28.43039pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 ocena
+ []
+
+
+Overfull \hbox (27.89568pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 pracy
+ []
+
+
+Overfull \hbox (26.61794pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 przez
+ []
+
+
+Overfull \hbox (45.04141pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 opiekuna 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \newpage
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3]
+Overfull \hbox (90.22186pt too wide) in paragraph at lines 48--49
+[]\OT1/cmr/bx/n/10 Merytoryczna
+ []
+
+
+Overfull \hbox (28.43039pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 ocena
+ []
+
+
+Overfull \hbox (27.89568pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 pracy
+ []
+
+
+Overfull \hbox (26.61794pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 przez
+ []
+
+
+Overfull \hbox (13.84023pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 re-
+ []
+
+
+Overfull \hbox (20.60406pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 cen-
+ []
+
+
+Overfull \hbox (26.51373pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 zenta 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \newpage
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4]
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--52
+[] 
+ []
+
 Missing character: There is no ≈ in font cmr10!
 Missing character: There is no Ç in font cmr10!
 Missing character: There is no ƒ in font cmr10!
-Missing character: There is no Ö in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no á in font cmr10!
-Missing character: There is no ≈ in font cmr10!
-Missing character: There is no Ç in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no Ö in font cmr10!
-Missing character: There is no ƒ in font cmr10!
 Missing character: There is no ô in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no Ö in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no Ö in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ≈ in font cmr10!
-Missing character: There is no Ç in font cmr10!
 Missing character: There is no ≈ in font cmr10!
 Missing character: There is no º in font cmr10!
-Missing character: There is no ƒ in font cmr10!
-Missing character: There is no á in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≥ in font cmr10!
 
-Overfull \hbox (12.50003pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 Na
+Overfull \hbox (34.72234pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 Skadam
  []
 
 
-Overfull \hbox (20.55559pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 kole-
+Overfull \hbox (41.19447pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 serdeczne
  []
 
 
-Overfull \hbox (23.33339pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 jnych
+Overfull \hbox (58.33347pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 podzikowanie
  []
 
 
-Overfull \hbox (22.50003pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 dwch
+Overfull \hbox (9.47224pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 dr
  []
 
 
-Overfull \hbox (37.02785pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 stronach
+Overfull \hbox (11.11115pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 in.
  []
 
 
-Overfull \hbox (22.86115pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 prosz
+Overfull \hbox (23.98611pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 Grze-
  []
 
 
-Overfull \hbox (24.72227pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 doczy
+Overfull \hbox (17.25003pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 gor-
  []
 
 
-Overfull \hbox (20.55559pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 kole-
+Overfull \hbox (19.16669pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 zowi
  []
 
 
-Overfull \hbox (13.61116pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 jno
+Overfull \hbox (16.18057pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 Ga-
  []
 
 
-Overfull \hbox (11.69444pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 re-
+Overfull \hbox (24.44447pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 chowi
  []
 
 
-Overfull \hbox (17.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 cen-
+Overfull \hbox (9.44446pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 za
  []
 
 
-Overfull \hbox (11.94446pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 zje
+Overfull \hbox (24.44447pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 cenne
  []
 
 
-Overfull \hbox (24.1945pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pracy
+Overfull \hbox (40.61119pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 wskazwki
  []
 
 
-Overfull \hbox (24.4445pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pope-
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 i
  []
 
 
-Overfull \hbox (23.33339pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 nione
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 po-
  []
 
 
-Overfull \hbox (22.80557pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 przez
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 moc
  []
 
 
-Overfull \hbox (41.94456pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 Opiekuna
+Overfull \hbox (19.19449pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 przy
  []
 
 
-Overfull \hbox (18.36115pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 oraz
+Overfull \hbox (20.61115pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 pisa-
  []
 
 
-Overfull \hbox (15.13889pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 Re-
+Overfull \hbox (13.88893pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 niu
  []
 
 
-Overfull \hbox (17.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 cen-
+Overfull \hbox (40.05563pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 niniejszej
  []
 
 
-Overfull \hbox (23.05559pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 zenta
- []
-
-
-Overfull \hbox (63.08347pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 (wydrukowane
- []
-
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 z
- []
-
-
-Overfull \hbox (16.50002pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 sys-
- []
-
-
-Overfull \hbox (21.94449pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 temu
- []
-
-
-Overfull \hbox (16.11113pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 MI-
- []
-
-
-Overfull \hbox (16.94449pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 SIO
- []
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 i
- []
-
-
-Overfull \hbox (20.00006pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pod-
- []
-
-
-Overfull \hbox (27.27783pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pisane
- []
-
-
-Overfull \hbox (22.80557pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 przez
- []
-
-
-Overfull \hbox (44.72232pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 odpowied-
- []
-
-
-Overfull \hbox (13.33337pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 nio
- []
-
-
-Overfull \hbox (41.94456pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 Opiekuna
- []
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 i
- []
-
-
-Overfull \hbox (15.13889pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 Re-
- []
-
-
-Overfull \hbox (17.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 cen-
- []
-
-
-Overfull \hbox (23.05559pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 zenta
- []
-
-
-Overfull \hbox (30.86119pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pracy).
- []
-
-
-Overfull \hbox (14.86113pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 Pa-
- []
-
-
-Overfull \hbox (28.63893pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pierow
- []
-
-
-Overfull \hbox (22.30557pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 wersj
- []
-
-
-Overfull \hbox (24.1945pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pracy
- []
-
-
-Overfull \hbox (16.66669pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 (za-
- []
-
-
-Overfull \hbox (10.55556pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 w-
- []
-
-
-Overfull \hbox (14.47223pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 ier-
- []
-
-
-Overfull \hbox (13.05557pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 ajc
- []
-
-
-Overfull \hbox (20.00006pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pod-
- []
-
-
-Overfull \hbox (27.27783pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 pisane
- []
-
-
-Overfull \hbox (11.69444pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 re-
- []
-
-
-Overfull \hbox (17.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 cen-
- []
-
-
-Overfull \hbox (15.83336pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 zje)
- []
-
-
-Overfull \hbox (22.86115pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 prosz
- []
-
-
-Overfull \hbox (14.72226pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 zoy
- []
-
-
-Overfull \hbox (7.22223pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 w
- []
-
-
-Overfull \hbox (40.83342pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 dziekana-
- []
-
-
-Overfull \hbox (11.66667pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 cie
- []
-
-
-Overfull \hbox (24.44447pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 celem
- []
-
-
-Overfull \hbox (11.69444pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 re-
- []
-
-
-Overfull \hbox (14.77779pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 jes-
- []
-
-
-Overfull \hbox (25.86118pt too wide) in paragraph at lines 46--48
-\OT1/cmr/m/n/10 tracji. 
+Overfull \hbox (26.13895pt too wide) in paragraph at lines 53--57
+ \OT1/cmr/m/n/10 pracy.
  []
 
 ! Undefined control sequence.
-l.50 \tableofcontents
+l.62 \tableofcontents
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1151,11 +1070,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 15 strings out of 493333
- 156 string characters out of 3139196
- 54242 words of memory out of 3000000
- 3642 multiletter control sequences out of 15000+200000
- 3945 words of font info for 15 fonts, out of 3000000 for 9000
+ 17 strings out of 493333
+ 177 string characters out of 3139196
+ 55242 words of memory out of 3000000
+ 3643 multiletter control sequences out of 15000+200000
+ 4253 words of font info for 16 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,6n,12p,329b,137s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,6n,12p,246b,137s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

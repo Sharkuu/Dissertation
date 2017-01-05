@@ -40,3 +40,24 @@ Można przewidywać, że jeśli uruchomiono by symulację obrazującą dłuższy
 \end{figure}
 
 Ważnym parametrem symulacji jest zakres, z którego losowane są wartości położenia dla cząstek. Porównując ze sobą wygenerowane dane na wykresie  \hyperref[wykres:1]{3} oraz \hyperref[wykres:2]{4} z rysunku \hyperref[rys:1]{4.1}, gdzie ilość elektronów oraz symulowany czas są takie same, a zakres wartości położeń cząstki znacząco się różni, zaobserwowano, że im większa gęstość ładunków tym efekt tunelowania zachodzi szybciej, co jest zgodne z przewidywaniami wynikającymi ze wzoru \ref{eq:2}. Dzięki temu oraz wykorzystanej implementacji wraz z założeniem, że po zrekombinowaniu elektron nie może przetunelować po raz kolejny, czas wykonania programu zmniejszył się widocznie z 3 h do ok. 5 min co widać na rysunku \hyperref[rys:2]{4.2}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, height = 10cm]{czas_all}
+\caption{Porównanie czasu wykonywania programu (w godzinach) z różnymi parametrami wejściowymi ze stałą gęstością rozkładu cząstek}
+\label{rys:1}
+\end{figure}
+
+Powyższy wykres przedstawia porównanie czasu wykonywania programu z parametrami dobranymi w taki sposób, aby gęstość rozkładu elektronów i dziur była stała. Symulowany czas wyniósł 1000 dni, a parametry były zmniejszane o około 20\% przy każdym wykonaniu programu, w stosunku do poprzedniego uruchomienia projektu. Oznaczenie na wykresach:
+
+\begin{itemize}
+\item 1 - Ilość elektronów: $10^{4}$, ilość dziur elektronowych: $10^{4}$, zakres, w którym losowane są położenia cząstek: [-800,800], symulowany czas: 1000 dni. Czas wykonania: 3 h.
+\item 2 - Ilość elektronów: 8000, ilość dziur elektronowych: 8000, zakres, w którym losowane są położenia cząstek: [-742,742], symulowany czas: 1000 dni. Czas wykonania: 2 h.
+\item 3 - Ilość elektronów: 6400, ilość dziur elektronowych: 6400, zakres, w którym losowane są położenia cząstek: [-688,688], symulowany czas: 1000 dni. Czas wykonania: 1 h 13 min.
+\item 4 - Ilość elektronów: 5120, ilość dziur elektronowych: 5120, zakres, w którym losowane są położenia cząstek: [-592,592], symulowany czas: 1000 dni. Czas wykonania: 37 min.
+\item 5 - Ilość elektronów: 4096, ilość dziur elektronowych: 4096, zakres, w którym losowane są położenia cząstek: [-549,549], symulowany czas: 1000 dni. Czas wykonania: 19 min.
+\item 6 - Ilość elektronów: 3276, ilość dziur elektronowych: 3276, zakres, w którym losowane są położenia cząstek: [-509,509], symulowany czas: 1000 dni. Czas wykonania: 11 min.
+
+\end{itemize}
+
+Jak można zaobserwować przy każdym zmniejszeniu wartości parametrów o około 20\% czas wykonania symulacji ulega skróceniu od około 33\% przy pierwszym zmniejszeniu ilości cząstek, do 50\% przy kolejnych uruchomieniach programu.
