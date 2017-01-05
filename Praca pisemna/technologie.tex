@@ -1,4 +1,5 @@
 \chapter{Wybór stosowanych technologii}
+\label{tech:all}
 \section{Język C++11 oraz wybór kompilatora}
 Aplikacja została napisana z użyciem języka C++11 \cite{c++}. Język ten
 wybrano z kilku powodów. Skorzystano tu z jego natury jako języka zorientowanego obiektowo. Dzięki temu podczas wykonania programu stworzono klasy odpowiadające obiektom w świecie realnym - elektrony, pułapki elektronowe itp.
@@ -13,8 +14,8 @@ C++11 jest standardem języka C++ zastępującym standard C++03. Wprowadza on ki
 
 Do kompilacji użyto darmowego kompilatora GCC (Gnu Compiler Collecion), konkretnie jego implementacji dla platformy Windows - MinGW w wersji 3.2.2 (Minimalist GNU for Windows).
 
-\section{Środowisko programistyczne}
-
+\section{Środowisko programistyczne CLion}
+\label{tech:clion}
 Program był tworzony z użyciem wieloplatformowego zintegrowanego środowiska programistycznego języków C/C++ - \textbf{CLion} (wersja 2016.2.3) produkcji spółki JetBrains. Było to podyktowane głównie znajomością produktów firmy JetBrains. \href{https://www.jetbrains.com/clion/}{CLion} jest produktem komercyjnym, jednak skorzystano tu z darmowej licencji studenckiej. IDE produkcji JetBrains obsługuje również 	system zarządzania kompilacją \textbf{CMake}, którego główną cechą jest niezależność od używanego kompilatora oraz platformy sprzętowej - CMake nie kompiluje programu samodzielnie lecz tworzy pliki z regułami kompilacji dla konkretnego środowiska.
 
 \begin{figure}[h]

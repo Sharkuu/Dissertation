@@ -23,12 +23,7 @@ W celu analizy otrzymanych danych, program został uruchomiony pewną ilość ra
 \end{itemize}
 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm, height = 10cm]{czas}
-\caption{Porównanie czasu wykonywania programu (w godzinach) z różnymi parametrami wejściowymi}
-\label{rys:2}
-\end{figure}
+
 
 
 
@@ -36,5 +31,12 @@ W celu analizy otrzymanych danych, program został uruchomiony pewną ilość ra
 Analizując otrzymane wykresy  na rysunku \hyperref[rys:1]{4.1} można zauważyć znaczny spadek ilości elektronów w pułapkach na samym początku wykonywania programu. Jest to spowodowane faktem, że wszystkie współrzędne cząstek są losowane z podanego zakresu. Oznacza to, że na początku symulacji wiele pułapek elektronowych zawierających elektrony znajduje się bardzo blisko centrów rekombinacji. Powołując się na równania \ref{eq:1} oraz \ref{eq:2} obserwujemy, że odległość między pułapką a centrum rekombinacji znacząco wpływa na prawdopodobieństwo zajścia efektu tunelowego, co skutkuje zaobserwowanym początkowym spadkiem ilości wzbudzonych elektronów. Po wystąpieniu znaczącego spadku można zaobserwować, że ilość elektronów znajdujących się w pułapkach zaczyna maleć z dużo mniejszą częstotliwością. Wykres zaczyna wtedy przypominać funkcję liniową. 
 
 Można przewidywać, że jeśli uruchomiono by symulację obrazującą dłuższy okres np. 50 lat, zanik elektronów w stanie wzbudzonym odbywałby się coraz wolniej. Wynika to z założenia, że elektron może przetunelować tylko jeden raz - oznacza to, że jeśli po pewnym czasie część elektronów przetuneluje do centrum rekombinacji, dla pozostałych elektronów prawdopodobieństwo zajścia tego efektu - które w głównej mierze zależy od odległości pomiędzy pułapką z elektronem, a pułapką z dziurą - będzie zbyt małe.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, height = 10cm]{czas}
+\caption{Porównanie czasu wykonywania programu (w godzinach) z różnymi parametrami wejściowymi}
+\label{rys:2}
+\end{figure}
 
 Ważnym parametrem symulacji jest zakres, z którego losowane są wartości położenia dla cząstek. Porównując ze sobą wygenerowane dane na wykresie  \hyperref[wykres:1]{3} oraz \hyperref[wykres:2]{4} z rysunku \hyperref[rys:1]{4.1}, gdzie ilość elektronów oraz symulowany czas są takie same, a zakres wartości położeń cząstki znacząco się różni, zaobserwowano, że im większa gęstość ładunków tym efekt tunelowania zachodzi szybciej, co jest zgodne z przewidywaniami wynikającymi ze wzoru \ref{eq:2}. Dzięki temu oraz wykorzystanej implementacji wraz z założeniem, że po zrekombinowaniu elektron nie może przetunelować po raz kolejny, czas wykonania programu zmniejszył się widocznie z 3 h do ok. 5 min co widać na rysunku \hyperref[rys:2]{4.2}. 

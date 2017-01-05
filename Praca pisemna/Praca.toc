@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.3}Zjawisko tunelowania}{8}{section.1.3}
 \contentsline {chapter}{\numberline {2}Wyb\IeC {\'o}r stosowanych technologii}{10}{chapter.2}
 \contentsline {section}{\numberline {2.1}J\IeC {\k e}zyk C++11 oraz wyb\IeC {\'o}r kompilatora}{10}{section.2.1}
-\contentsline {section}{\numberline {2.2}\IeC {\'S}rodowisko programistyczne}{10}{section.2.2}
+\contentsline {section}{\numberline {2.2}\IeC {\'S}rodowisko programistyczne CLion}{10}{section.2.2}
 \contentsline {section}{\numberline {2.3}System kontroli wersji Git}{12}{section.2.3}
 \contentsline {section}{\numberline {2.4}Wizualizacja wynik\IeC {\'o}w - Gnuplot}{12}{section.2.4}
 \contentsline {section}{\numberline {2.5}Valgrind}{12}{section.2.5}
@@ -18,4 +18,4 @@
 \contentsline {section}{\numberline {4.1}Wygenerowane wykresy}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Analiza wykres\IeC {\'o}w}{18}{section.4.2}
 \contentsline {chapter}{\numberline {5}Dalszy rozw\IeC {\'o}j programu}{20}{chapter.5}
-\contentsline {chapter}{\numberline {6}Wnioski}{22}{chapter.6}
+\contentsline {chapter}{\numberline {6}Podsumowanie}{22}{chapter.6}

@@ -1,3 +1,7 @@
-\chapter{Wnioski}
+\chapter{Podsumowanie}
 
+Celem wykonywanej pracy było napisanie programu symulującego atermiczny zanik sygnału luminescencyjnego w skaleniach.  Założona podstawowa funkcjonalność została osiągnięta, a zaimplementowany projekt jest prosty do zrozumienia oraz dalszego rozwoju. Dzięki stworzeniu klas odpowiadającym rzeczywistym cząstkom uzyskano symulację, która - mimo paru ograniczeń wynikających z założeń - dobrze odzwierciedla przedstawiane zjawisko w świecie realnym.
 
+Praca została usprawniona dzięki skorzystaniu z profesjonalnego IDE \hyperref[tech:clion]{CLion}, oraz innym \hyperref[tech:all]{narzędziom} użytym w trakcie implementacji. Dzięki nim, kod programu jest przejrzysty, zawiera dokumentację, oraz nie posiada błędów i wycieków pamięci.
+
+Używając programu należy pamiętać, że symuluje on proces długotrwały. W rzeczywistości elektrony znajdujące się w pułapkach mogą być tam przechowywane przez setki lat. Symulacja takiego zjawiska nie jest prosta, gdyż wymaga bardzo dużej ilości obliczeń, co znacznie wydłuża czas potrzebny do otrzymania danych. W celu wykonania symulacji w rozsądnym czasie w  prezentowanych  \hyperref[wynik:wykres]{wynikach} ilość cząstek nie przekroczyła rzędu $10^{4}$ \footnote{W rzeczywistym krysztale skalenia cząstek może być znacznie więcej}, a symulowany czas wynosił najczęściej zaledwie 1000 dni. Pozwoliło to na przeprowadzenie symulacji trwającej maksymalnie około 24 godzin. Czas wykonywania symulacji można zmniejszyć optymalizując kod na przykład używając drzewa \emph{kd}, jak wspomniano w rozdziale \hyperref[rozwoj:1]{5}. 
