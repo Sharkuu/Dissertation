@@ -28,18 +28,6 @@ Crystal::Crystal(long long int n_el, long long int n_holes, double min_range, do
 }
 
 
-std::vector<Trap> Crystal::getTraps() const {
-    return this->el_traps;
-}
-
-std::vector<Electron *> Crystal::getElectrons() const {
-    return this->electrons;
-}
-
-std::vector<ElectronHole *> Crystal::getElectronHoles() const {
-    return this->electron_holes;
-}
-
 Crystal::~Crystal() {
     for (auto elec : electrons)
         delete elec;

@@ -57,6 +57,10 @@ public:
      */
     void setElectron(Electron *electron1);
 
+    /**
+     *
+     * @return wskaźnik na elektron znajdujący się w pułapce
+     */
     Electron *getElectron() const;
 
     /**

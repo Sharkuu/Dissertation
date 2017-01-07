@@ -12,16 +12,16 @@ generowany jest przez warstwę pośrednią w postaci maszyny wirtualnej.
 
 C++11 jest standardem języka C++ zastępującym standard C++03. Wprowadza on kilka dodatków do rdzenia języka oraz znacznie rozszerza bibliotekę standardową C++. Dla przykładu wprowadza on słowo kluczowe \textit{auto} jako zastępczy typ zmiennej, który zostanie wydedukowany na podstawie wartości, za pomocą której zmienna zostanie zainicjalizowana. Nowa biblioteka wprowadza również kilka silników do generacji liczb pseudolosowych. W projekcie wykorzystano generator oparty na jednostajnie ciągłym rozkładzie prawdopodobieństwa.
 
-Do kompilacji użyto darmowego kompilatora GCC (Gnu Compiler Collecion), konkretnie jego implementacji dla platformy Windows - MinGW w wersji 3.2.2 (Minimalist GNU for Windows).
+Do kompilacji użyto darmowego kompilatora \href{https://gcc.gnu.org/}{GCC} (Gnu Compiler Collecion), konkretnie jego implementacji dla platformy Windows - \href{http://www.mingw.org/}{MinGW} w wersji 3.2.2 (Minimalist GNU for Windows).
 
 \section{Środowisko programistyczne CLion}
 \label{tech:clion}
-Program był tworzony z użyciem wieloplatformowego zintegrowanego środowiska programistycznego języków C/C++ - \textbf{CLion} (wersja 2016.2.3) produkcji spółki JetBrains. Było to podyktowane głównie znajomością produktów firmy JetBrains. \href{https://www.jetbrains.com/clion/}{CLion} jest produktem komercyjnym, jednak skorzystano tu z darmowej licencji studenckiej. IDE produkcji JetBrains obsługuje również 	system zarządzania kompilacją \textbf{CMake}, którego główną cechą jest niezależność od używanego kompilatora oraz platformy sprzętowej - CMake nie kompiluje programu samodzielnie lecz tworzy pliki z regułami kompilacji dla konkretnego środowiska.
+Program był tworzony z użyciem wieloplatformowego zintegrowanego środowiska programistycznego (IDE) języków C/C++ - \href{https://www.jetbrains.com/clion/}{\textbf{CLion}} (wersja 2016.2.3) produkcji spółki JetBrains. Było to podyktowane głównie znajomością produktów firmy JetBrains. CLion jest produktem komercyjnym, jednak skorzystano tu z darmowej licencji studenckiej. IDE produkcji JetBrains obsługuje również 	system zarządzania kompilacją \href{https://cmake.org/}{\textbf{CMake}}, którego główną cechą jest niezależność od używanego kompilatora oraz platformy sprzętowej - CMake nie kompiluje programu samodzielnie lecz tworzy pliki z regułami kompilacji dla konkretnego środowiska.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=17cm]{clion}
-\caption{Wygląd okna programu CLion \cite{struktura_pasmowa}}
+\caption{Wygląd okna programu CLion}
 \label{fig:clion}
 \end{figure}
 
@@ -35,7 +35,8 @@ set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -g -Wall")
 SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 SET(BUILD_SHARED_LIBRARIES OFF)
-set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Trap.h Functions.cpp Functions.h ElectronHole.cpp ElectronHole.h Crystal.cpp Crystal.h)
+set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Trap.h 
+			  ElectronHole.cpp ElectronHole.h Crystal.cpp Crystal.h)
 add_executable(Dissertation ${SOURCE_FILES})
 target_link_libraries(Dissertation)
 
@@ -55,13 +56,16 @@ ryzyka zniszczenia kodu. Cały projekt można pobrać ze strony:
 
 \section{Wizualizacja wyników - Gnuplot}
 
-Po wygenerowaniu danych,by zwizualizować wykres obrazujący zmianę ilości elektronów znajdujących się w stanie wzbudzonym (znajdujących się w pułapkach) wraz z upływem czasu, skorzystano z programu \href{http://www.gnuplot.info/}{\textbf{Gnuplot}}.
+Po wygenerowaniu danych, by zwizualizować wykres obrazujący zmianę ilości elektronów znajdujących się w stanie wzbudzonym (znajdujących się w pułapkach) wraz z upływem czasu, skorzystano z programu \href{http://www.gnuplot.info/}{\textbf{Gnuplot}}.
 
-Gnuplot jest narzędziem do kreślenia wykresów 2D i 3D, sterowanym z wiersza poleceń. Ta jego cecha oraz możliwość pobierania zewnętrznych danych umożliwia jego wykorzystanie do wizualizacji wyników z innych programów. Możliwe są dwa tryby pracy:
+Gnuplot jest narzędziem do kreślenia wykresów 2D i 3D, sterowanym z wiersza poleceń. Ta jego cecha oraz możliwość pobierania zewnętrznych danych umożliwia jego wykorzystanie do wizualizacji wyników z innych programów. Możliwe są dwa tryby pracy.
 \begin{itemize}
 \item Jeżeli uruchomimy program bez podania żadnych parametrów (polecenie gnuplot), będzie on pracował w trybie interaktywnym (będzie oczekiwał na komendy użytkownika i kolejno je wykonywał). Aby zakończyć pracę, należy wpisać komendę exit, quit lub q.
-\item Jeżeli podamy parametr (polecenie gnuplot plik), program wykona polecenia zawarte w pliku i zakończy pracę (tryb wsadowy)
+\item Jeżeli podamy parametr (polecenie gnuplot plik), program wykona polecenia zawarte w pliku i zakończy pracę (tryb wsadowy).
 \end{itemize}
 
 \section{Valgrind}
-W czasie tworzenia aplikacji użyto narzędzia \href{http://valgrind.org/}{\textbf{Valgrind}}. Służy on do debugowania, wykrywania wycieków pamięci oraz profilowania aplikacji. Dzięki wykorzystaniu tego narzędzia upewniono się, że nie ma żadnych wycieków pamięci, zwiększono szybkość działania programu oraz zmniejszono ilość błędów występujących na początku tworzenia programu.
+W czasie tworzenia aplikacji użyto narzędzia \href{http://valgrind.org/}{\textbf{Valgrind}}. Służy on do debugowania, wykrywania wycieków pamięci oraz profilowania aplikacji. Dzięki wykorzystaniu tego narzędzia upewniono się, że pamięć jest poprawnie zarządzana, zwiększono szybkość działania programu oraz zmniejszono ilość błędów występujących na początku tworzenia programu.
+\section{Doxygen}
+\label{tech:doxy}
+Do wygenerowania dokumentacji stworzonego kodu użyto programu \href{http://www.doxygen.nl/}{\textbf{Doxygen}}. Jest to narzędzie, które interpretując odpowiednie komentarze w programie tworzy dokumentację zawierającą opis klas, ich składowych oraz metod. W projekcie wygenerowano dokumentacje w dwóch wersjach: \textit{PDF} oraz \textit{HTML}.

@@ -27,12 +27,6 @@ public:
 
     ~Electron();
 
-    inline double getX() const { return position[0]; }
-
-    inline double getY() const { return position[1]; }
-
-    inline double getZ() const { return position[2]; }
-
     /**
      * Zmianna x-owej wartości współrzędnej
      * @param x nowa wartość współrzędnej

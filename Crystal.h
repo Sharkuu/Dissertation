@@ -88,11 +88,6 @@ public:
     void tunnelEffect(Trap &trap, int time);
 
 
-    std::vector<Trap> getTraps() const;
-
-    std::vector<Electron *> getElectrons() const;
-
-    std::vector<ElectronHole *> getElectronHoles() const;
 
     /**
      * Funkcja do obliczania prawdopodobienstwa NIEZAJŚCIA tunelowania
@@ -103,8 +98,16 @@ public:
      */
     static double tunnelEffectProbability(double time, double tau);
 
+    /**
+     * @brief funkcja zliczająca ilość elektronów w pułapkach
+     * @return ilość elektronów w pułapkach
+     */
     unsigned long countElectrons() const;
 
+    /**
+     * @brief zapis wyniku do plików
+     * @param name nazwa pliku wyjściowego
+     */
     void saveToFile(std::string);
 };
 

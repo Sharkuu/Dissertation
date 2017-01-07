@@ -8,14 +8,15 @@
 \BOOKMARK [1][-]{section.2.3}{System kontroli wersji Git}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.4}{Wizualizacja wynik\363w - Gnuplot}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.5}{Valgrind}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Implementacja}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Kod}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Konwencja nazw}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.2}{Formatowanie i dokumentacja}{section.3.1}% 14
-\BOOKMARK [1][-]{section.3.2}{Klasy}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Opis dzia\233ania programu}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Analiza wynik\363w}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Wygenerowane wykresy}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Analiza wykres\363w}{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Dalszy rozw\363j programu}{}% 20
-\BOOKMARK [0][-]{chapter.6}{Podsumowanie}{}% 21
+\BOOKMARK [1][-]{section.2.6}{Doxygen}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Implementacja}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Kod}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{Konwencja nazw}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.2}{Formatowanie i dokumentacja}{section.3.1}% 15
+\BOOKMARK [1][-]{section.3.2}{Klasy}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Opis dzia\233ania programu}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Analiza wynik\363w}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Wygenerowane wykresy}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{Analiza wykres\363w}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Dalszy rozw\363j programu}{}% 21
+\BOOKMARK [0][-]{chapter.6}{Podsumowanie}{}% 22

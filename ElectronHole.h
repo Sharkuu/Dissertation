@@ -63,6 +63,9 @@ public:
     */
     void nullTrap();
 
+    /**
+     * @brief destruktor
+     */
     ~ElectronHole();
 
     friend std::ostream &operator<<(std::ostream &s, const ElectronHole &v);

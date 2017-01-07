@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['amount_5felectrons',['amount_electrons',['../class_crystal.html#aaca16f336da4552843e60dfd5b23b103',1,'Crystal']]]
+  ['amount_5felectrons',['amount_electrons',['../class_crystal.html#a5d7e92a932947720b40fac38cca0ed77',1,'Crystal']]]
 ];

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  5 JAN 2017 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  7 JAN 2017 01:39
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -552,20 +552,20 @@ LaTeX Warning: Label `rys:1' multiply defined.
 ) (podsumowanie.aux) (bibliografia.aux))
 \openout1 = `Praca.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 (C:\Users\olav\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -628,7 +628,7 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 19.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -637,9 +637,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count109
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (Praca.out) (Praca.out)
 \@outlinefile=\write3
@@ -660,7 +660,7 @@ s-converted-to.pdf agh_nzw_a_pl_1w_wbr_cmyk.eps>
 (epstopdf)             \includegraphics on input line 2.
 Package epstopdf Info: Output file is already uptodate.
 
-<agh_nzw_a_pl_1w_wbr_cmyk-eps-converted-to.pdf, id=87, 323.2075pt x 107.40125pt
+<agh_nzw_a_pl_1w_wbr_cmyk-eps-converted-to.pdf, id=91, 323.2075pt x 107.40125pt
 >
 File: agh_nzw_a_pl_1w_wbr_cmyk-eps-converted-to.pdf Graphic file (type pdf)
  <use agh_nzw_a_pl_1w_wbr_cmyk-eps-converted-to.pdf>
@@ -713,13 +713,13 @@ Rozdzia\PlPrIeC {\l } 1.
 
 
 
-] <strukturapasmowa.png, id=150, 606.46574pt x 217.41225pt>
+] <strukturapasmowa.png, id=155, 606.46574pt x 217.41225pt>
 File: strukturapasmowa.png Graphic file (type png)
 
 <use strukturapasmowa.png>
 Package pdftex.def Info: strukturapasmowa.png used on input line 25.
 (pdftex.def)             Requested size: 426.79134pt x 153.00693pt.
- <tunelowanie.png, id=153, 310.15875pt x 244.5135pt>
+ <tunelowanie.png, id=158, 310.15875pt x 244.5135pt>
 File: tunelowanie.png Graphic file (type png)
 
 <use tunelowanie.png>
@@ -742,7 +742,7 @@ Rozdzia\PlPrIeC {\l } 2.
 
 
 
-] <clion.png, id=188, 1156.32pt x 621.522pt>
+] <clion.png, id=196, 1156.32pt x 621.522pt>
 File: clion.png Graphic file (type png)
  <use clion.png>
 Package pdftex.def Info: clion.png used on input line 23.
@@ -751,88 +751,86 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (417.63303pt too wide) in paragraph at lines 42--42
-[]\T1/cmtt/m/n/12 set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Tr
-ap.h Functions.cpp Functions.h ElectronHole.cpp ElectronHole.h Crystal.cpp Crys
-tal.h)[] 
- []
-
-[11 <./clion.png>]) [12]
+) [11 <./clion.png>])
+[12] [13]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 3.
-<strukturaprojektu.png, id=205, 265.59225pt x 305.34074pt>
+<strukturaprojektu.png, id=218, 265.59225pt x 305.34074pt>
 File: strukturaprojektu.png Graphic file (type png)
 
 <use strukturaprojektu.png>
 Package pdftex.def Info: strukturaprojektu.png used on input line 6.
 (pdftex.def)             Requested size: 426.83665pt x 398.37328pt.
- [13
+ [14
 
 
 
- <./strukturaprojektu.png>] [14] [15]
-<wykres1.png, id=228, 642.4pt x 385.44pt>
+ <./strukturaprojektu.png>] [15] [16]
+<wykres1.png, id=241, 642.4pt x 385.44pt>
 File: wykres1.png Graphic file (type png)
  <use wykres1.png>
 Package pdftex.def Info: wykres1.png used on input line 69.
 (pdftex.def)             Requested size: 426.79134pt x 256.07912pt.
-) [16 <./wykres1.png>]
+) [17 <./wykres1.png>]
 \openout2 = `wynik.aux'.
 
  (wynik.tex
 Rozdzia\PlPrIeC {\l } 4.
-<wykres_all.png, id=234, 642.4pt x 385.44pt>
+<wykres_all.png, id=247, 642.4pt x 385.44pt>
 File: wykres_all.png Graphic file (type png)
  <use wykres_all.png>
 Package pdftex.def Info: wykres_all.png used on input line 10.
 (pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
- [17
+ [18
 
 
 
  <./wykres_all.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 22.
- <czas.png, id=244, 642.4pt x 385.44pt>
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+ <czas.png, id=257, 392.667pt x 240.29774pt>
 File: czas.png Graphic file (type png)
  <use czas.png>
 Package pdftex.def Info: czas.png used on input line 37.
-(pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
- [18]
-<czas_all.png, id=259, 642.4pt x 385.44pt>
+(pdftex.def)             Requested size: 483.70853pt x 284.5462pt.
+ [19]
+<czas_all.png, id=272, 642.4pt x 385.44pt>
 File: czas_all.png Graphic file (type png)
  <use czas_all.png>
 Package pdftex.def Info: czas_all.png used on input line 46.
 (pdftex.def)             Requested size: 483.71025pt x 284.52713pt.
- [19 <./czas.png>]) [20 <./czas_all.png>] [21] (rozwoj.tex
+ [20 <./czas.png>]) [21 <./czas_all.png>] [22] (rozwoj.tex
 Rozdzia\PlPrIeC {\l } 5.
-<przyklad_ulepszony.png, id=277, 642.4pt x 385.44pt>
+<przyklad_ulepszony.png, id=290, 642.4pt x 385.44pt>
 File: przyklad_ulepszony.png Graphic file (type png)
 
 <use przyklad_ulepszony.png>
 Package pdftex.def Info: przyklad_ulepszony.png used on input line 12.
 (pdftex.def)             Requested size: 483.69684pt x 290.22615pt.
- [22
+ [23
 
 
-]) [23 <./przyklad_ulepszony.png>]
+]) [24 <./przyklad_ulepszony.png>]
 \openout2 = `podsumowanie.aux'.
 
 
 (podsumowanie.tex
 Rozdzia\PlPrIeC {\l } 6.
-) [24
+) [25
 
 
 ]
 \openout2 = `bibliografia.aux'.
 
- (bibliografia.tex) [25
+ (bibliografia.tex) [26
 
 
 
@@ -845,7 +843,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
-(rerunfilecheck)             Checksum: 2EC7E02E0B8A842E87EC513A1E2D2CB3;1378.
+(rerunfilecheck)             Checksum: 7E61E1F23170927260FF674A6D36736B;1433.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -853,37 +851,36 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
  ) 
 Here is how much of TeX's memory you used:
- 6511 strings out of 493333
- 93492 string characters out of 3139196
- 189502 words of memory out of 3000000
- 9815 multiletter control sequences out of 15000+200000
+ 6518 strings out of 493333
+ 93583 string characters out of 3139196
+ 189544 words of memory out of 3000000
+ 9820 multiletter control sequences out of 15000+200000
  42613 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,43p,1149b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,8n,43p,1132b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 crm1000.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecrm0700.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecrm0800.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\olav\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\olav\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\ola
-v\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\
-Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200
-.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecrm1200.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (25 pages, 701047 bytes).
+\dpi600\ecbx1440.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ectt1200.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\olav\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\olav\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\olav\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\ola
+v\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk>{C:/P
+rogram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/helvetic/uhvr8a.pfb>
+Output written on Praca.pdf (26 pages, 716942 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 801 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 

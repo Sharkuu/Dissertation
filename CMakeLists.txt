@@ -5,6 +5,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -g -Wall")
 SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 SET(BUILD_SHARED_LIBRARIES OFF)
 
-set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Trap.h Functions.cpp Functions.h ElectronHole.cpp ElectronHole.h Crystal.cpp Crystal.h)
+set(SOURCE_FILES main.cpp Electron.h Electron.cpp Trap.cpp Trap.h ElectronHole.cpp ElectronHole.h Crystal.cpp Crystal.h)
 add_executable(Dissertation ${SOURCE_FILES})
 target_link_libraries(Dissertation )
